@@ -45,6 +45,9 @@ class ControllerCommonFooter extends Controller {
 
 		$this->data['powered'] = sprintf($this->language->get('text_powered'), $this->config->get('config_name'), date('Y', time()));
 		
+                $information_info = $this->model_catalog_information->getInformation(7);
+                $this->data['footer_leyend'] = html_entity_decode($information_info['description'], ENT_QUOTES, 'UTF-8');
+                
 		// Whos Online
 		if ($this->config->get('config_customer_online')) {
 			$this->load->model('tool/online');

@@ -9,6 +9,7 @@ class ControllerCommonHeader extends Controller {
 			$server = $this->config->get('config_url');
 		}
 
+                
 		$this->data['base'] = $server;
 		$this->data['description'] = $this->document->getDescription();
 		$this->data['keywords'] = $this->document->getKeywords();
@@ -20,6 +21,11 @@ class ControllerCommonHeader extends Controller {
 		$this->data['google_analytics'] = html_entity_decode($this->config->get('config_google_analytics'), ENT_QUOTES, 'UTF-8');
 		$this->data['name'] = $this->config->get('config_name');
 		
+                $this->data['styles'][] = array('href' => 'catalog/view/theme/default/stylesheet/nb.css', 'rel' =>'stylesheet', 'media' => 'screen');
+                $this->data['styles'][] = array('href' => 'catalog/view/javascript/jquery/ui/themes/ui-lightness/jquery-ui-1.8.16.custom.css', 'rel' =>'stylesheet', 'media' => 'screen');
+                $this->data['scripts'][] = 'catalog/view/javascript/common.js';
+                
+                
 		if ($this->config->get('config_icon') && file_exists(DIR_IMAGE . $this->config->get('config_icon'))) {
 			$this->data['icon'] = $server . 'image/' . $this->config->get('config_icon');
 		} else {
@@ -87,6 +93,7 @@ class ControllerCommonHeader extends Controller {
 			$this->data['search'] = '';
 		}
 		
+                
 		// Menu
 		$this->load->model('catalog/category');
 		
