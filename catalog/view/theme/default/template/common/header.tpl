@@ -6,6 +6,7 @@
 <base href="<?php echo $base; ?>" />
 <?php if ($description) { ?>
 <meta name="description" content="<?php echo $description; ?>" />
+<meta name="viewport" content="width=device-width">
 <?php } ?>
 <?php if ($keywords) { ?>
 <meta name="keywords" content="<?php echo $keywords; ?>" />
@@ -26,6 +27,7 @@
 <?php } ?>
 <!--[if IE 7]> 
 <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/ie7.css" />
+<p class="chromeframe">Usted est&aacute; usando un navegador <strong>desactualizado</strong>. Por favor <a href="http://browsehappy.com/">actualice su navegador</a> o <a href="http://www.google.com/chromeframe/?redirect=true">active Google Chrome Frame</a> para mejorar su experiencia.</p>
 <![endif]-->
 <!--[if lt IE 7]>
 <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/ie6.css" />
@@ -48,13 +50,21 @@ DD_belatedPNG.fix('#logo img');
     <input type="text" name="search" placeholder="<?php echo $text_search; ?>" value="<?php echo $search; ?>" />
   </div>
   <div id="welcome">
-    <?php if (!$logged) { ?>
-    <?php echo $text_welcome; ?>
-    <?php } else { ?>
-    <?php echo $text_logged; ?>
-    <?php } ?>
+      
+    <div class="left-content">
+        <?php if (!$logged) { ?>
+        <?php echo $text_welcome; ?>
+        <?php } else { ?>
+        <?php echo $text_logged; ?>
+        <?php } ?>
+    </div>  
+    <div class="right-content">
+        <span class="aux-shipping">Env&iacute;o gratis en pedido de m&aacute;s de <?php echo $free_shipping_limit; ?></span>
+        <a href="http://www.naturalbenefits.us" class="aux-us-store" target="_blank">U.S. Online Store</a>
+    </div>
+    
   </div>
-  <div class="links"><a href="<?php echo $home; ?>"><?php echo $text_home; ?></a><a href="<?php echo $wishlist; ?>" id="wishlist-total"><?php echo $text_wishlist; ?></a><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a><a href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a><a href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a></div>
+  <div class="links"><a href="<?php echo $about_us; ?>">Con&oacute;cenos</a><a href="<?php echo $profesional_cons; ?>" >Consulta con Profesionales</a><a href="<?php echo $special_offer; ?>">Ofertas Especiales</a></div>
 </div>
 <?php if ($categories) { ?>
 <div id="menu">

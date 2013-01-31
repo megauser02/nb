@@ -24,6 +24,8 @@ class ControllerCommonHeader extends Controller {
                 $this->data['styles'][] = array('href' => 'catalog/view/theme/default/stylesheet/nb.css', 'rel' =>'stylesheet', 'media' => 'screen');
                 $this->data['styles'][] = array('href' => 'catalog/view/javascript/jquery/ui/themes/ui-lightness/jquery-ui-1.8.16.custom.css', 'rel' =>'stylesheet', 'media' => 'screen');
                 $this->data['scripts'][] = 'catalog/view/javascript/common.js';
+                $this->data['scripts'][] = 'catalog/view/javascript/m57847.js';
+                
                 
                 
 		if ($this->config->get('config_icon') && file_exists(DIR_IMAGE . $this->config->get('config_icon'))) {
@@ -43,11 +45,11 @@ class ControllerCommonHeader extends Controller {
 		$this->data['text_home'] = $this->language->get('text_home');
 		$this->data['text_wishlist'] = sprintf($this->language->get('text_wishlist'), (isset($this->session->data['wishlist']) ? count($this->session->data['wishlist']) : 0));
 		$this->data['text_shopping_cart'] = $this->language->get('text_shopping_cart');
-    	$this->data['text_search'] = $this->language->get('text_search');
-		$this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), $this->url->link('account/login', '', 'SSL'), $this->url->link('account/register', '', 'SSL'));
+                $this->data['text_search'] = $this->language->get('text_search');
+		$this->data['text_welcome'] = sprintf($this->language->get('text_welcome'), HTTP_SERVER_ADMIN, $this->url->link('account/login', '', 'SSL'));
 		$this->data['text_logged'] = sprintf($this->language->get('text_logged'), $this->url->link('account/account', '', 'SSL'), $this->customer->getFirstName(), $this->url->link('account/logout', '', 'SSL'));
 		$this->data['text_account'] = $this->language->get('text_account');
-    	$this->data['text_checkout'] = $this->language->get('text_checkout');
+                $this->data['text_checkout'] = $this->language->get('text_checkout');
 				
 		$this->data['home'] = $this->url->link('common/home');
 		$this->data['wishlist'] = $this->url->link('account/wishlist', '', 'SSL');
@@ -55,7 +57,9 @@ class ControllerCommonHeader extends Controller {
 		$this->data['account'] = $this->url->link('account/account', '', 'SSL');
 		$this->data['shopping_cart'] = $this->url->link('checkout/cart');
 		$this->data['checkout'] = $this->url->link('checkout/checkout', '', 'SSL');
-		
+                
+                $this->data['free_shipping_limit'] = $this->currency->format($this->config->get('free_limit_shipping'));
+                
 		// Daniel's robot detector
 		$status = true;
 		

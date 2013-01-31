@@ -2,6 +2,9 @@
 class ControllerModuleCart extends Controller {
 	public function index() {
 		$this->language->load('module/cart');
+                $this->load->library('cuttext');
+                $cut = new Cuttext;
+                
 		
       	if (isset($this->request->get['remove'])) {
           	$this->cart->remove($this->request->get['remove']);
@@ -102,7 +105,7 @@ class ControllerModuleCart extends Controller {
 			$this->data['products'][] = array(
 				'key'      => $product['key'],
 				'thumb'    => $image,
-				'name'     => $product['name'],
+				'name'     => $cut->cut($product['name'], 8),
 				'model'    => $product['model'], 
 				'option'   => $option_data,
 				'quantity' => $product['quantity'],

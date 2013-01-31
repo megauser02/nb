@@ -1,9 +1,13 @@
 <?php
 // HTTP
 define('HTTP_SERVER', 'http://localhost/nb/');
+define('HTTP_SERVER_ADMIN', 'http://localhost/nb/admin');
+define('HTTP_IMG_TEMPLATE', 'http://localhost/nb/catalog/view/theme/default/image/');
 
 // HTTPS
 define('HTTPS_SERVER', 'http://localhost/nb/');
+define('HTTPS_SERVER_ADMIN', 'http://localhost/nb/');
+define('HTTPS_IMG_TEMPLATE', 'http://localhost/nb/catalog/view/theme/default/image/');
 
 // DIR
 define('DIR_APPLICATION', 'C:\wamp\www\nb/catalog/');
