@@ -33,7 +33,7 @@ class ControllerCommonFooter extends Controller {
 
 		$this->data['contact'] = $this->url->link('information/contact');
 		$this->data['return'] = $this->url->link('account/return/insert', '', 'SSL');
-    	$this->data['sitemap'] = $this->url->link('information/sitemap');
+                $this->data['sitemap'] = $this->url->link('information/sitemap');
 		$this->data['manufacturer'] = $this->url->link('product/manufacturer');
 		$this->data['voucher'] = $this->url->link('account/voucher', '', 'SSL');
 		$this->data['affiliate'] = $this->url->link('affiliate/account', '', 'SSL');
@@ -42,6 +42,20 @@ class ControllerCommonFooter extends Controller {
 		$this->data['order'] = $this->url->link('account/order', '', 'SSL');
 		$this->data['wishlist'] = $this->url->link('account/wishlist', '', 'SSL');
 		$this->data['newsletter'] = $this->url->link('account/newsletter', '', 'SSL');		
+                
+                $this->data['about'] = $this->url->link('information/information', 'information_id=8', 'SSL');
+                $this->data['lab'] = $this->url->link('information/information', 'information_id=10', 'SSL');
+                $this->data['ingr'] = $this->url->link('information/information', 'information_id=11', 'SSL');
+                $this->data['office'] = $this->url->link('information/information', 'information_id=12', 'SSL');
+                $this->data['distro'] = $this->url->link('information/information', 'information_id=14', 'SSL');
+                $this->data['nb_store'] = 'http://www.naturalbenefits.us';
+                $this->data['faq'] = $this->url->link('information/information', 'information_id=13', 'SSL');
+                $this->data['terms'] = $this->url->link('information/information', 'information_id=5', 'SSL');
+                $this->data['tw'] = TW;
+                $this->data['fb'] = FB;
+                $this->data['join'] = false;
+                $this->data['special_offer'] = false;
+                $this->data['capt'] = $this->url->link('information/information', 'information_id=15', 'SSL');
 
 		$this->data['powered'] = sprintf($this->language->get('text_powered'), $this->config->get('config_name'), date('Y', time()));
 		

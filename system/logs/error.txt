@@ -1,0 +1,6 @@
+2013-01-31 22:21:52 - PHP Notice:  Undefined index: about_us in C:\wamp\www\nb\catalog\controller\common\header.php on line 64
+2013-01-31 22:21:52 - PHP Notice:  Undefined index: profesional_cons in C:\wamp\www\nb\catalog\controller\common\header.php on line 66
+2013-02-01 15:45:52 - PHP Warning:  unlink(C:\wamp\www\nb/system/cache/cache.currency.1359674619) [<a href='function.unlink'>function.unlink</a>]: Permission denied in C:\wamp\www\nb\system\library\cache.php on line 18
+2013-02-01 18:20:12 - PHP Notice:  Undefined variable: join in C:\wamp\www\nb\catalog\view\theme\default\template\common\footer.tpl on line 38
+2013-02-01 18:21:12 - PHP Notice:  Undefined variable: join in C:\wamp\www\nb\catalog\view\theme\default\template\common\footer.tpl on line 38
+2013-02-01 18:22:08 - PHP Notice:  Undefined variable: join in C:\wamp\www\nb\catalog\view\theme\default\template\common\footer.tpl on line 38

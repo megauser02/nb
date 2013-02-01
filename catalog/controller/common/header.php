@@ -60,6 +60,10 @@ class ControllerCommonHeader extends Controller {
                 
                 $this->data['free_shipping_limit'] = $this->currency->format($this->config->get('free_limit_shipping'));
                 
+                $this->data['about_us'] = $this->url->link('information/information', 'information_id=8');
+                $this->data['profesional_cons'] = $this->url->link('information/information', 'information_id=9' );
+                $this->data['special_offer'] = false;
+                
 		// Daniel's robot detector
 		$status = true;
 		

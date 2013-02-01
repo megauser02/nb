@@ -20,6 +20,9 @@ define('DIR_IMAGE', 'C:\wamp\www\nb/image/');
 define('DIR_CACHE', 'C:\wamp\www\nb/system/cache/');
 define('DIR_DOWNLOAD', 'C:\wamp\www\nb/download/');
 define('DIR_LOGS', 'C:\wamp\www\nb/system/logs/');
+define('TW', 'https://twitter.com/');
+define('FB', 'https://www.facebook.com/');
+
 
 // DB
 define('DB_DRIVER', 'mysql');
