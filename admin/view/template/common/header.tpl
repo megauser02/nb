@@ -68,17 +68,17 @@ $(document).ready(function(){
         <ul>
           <li><a href="<?php echo $category; ?>"><?php echo $text_category; ?></a></li>
           <li><a href="<?php echo $product; ?>"><?php echo $text_product; ?></a></li>
-          <li><a href="<?php echo $filter; ?>"><?php echo $text_filter; ?></a></li>
-          <li><a class="parent"><?php echo $text_attribute; ?></a>
+          <li class="hide-me"><a href="<?php echo $filter; ?>"><?php echo $text_filter; ?></a></li>
+          <li class="hide-me"><a class="parent"><?php echo $text_attribute; ?></a>
             <ul>
-              <li><a href="<?php echo $attribute; ?>"><?php echo $text_attribute; ?></a></li>
-              <li><a href="<?php echo $attribute_group; ?>"><?php echo $text_attribute_group; ?></a></li>
+              <li class="hide-me"><a href="<?php echo $attribute; ?>"><?php echo $text_attribute; ?></a></li>
+              <li class="hide-me"><a href="<?php echo $attribute_group; ?>"><?php echo $text_attribute_group; ?></a></li>
             </ul>
           </li>
-          <li><a href="<?php echo $option; ?>"><?php echo $text_option; ?></a></li>
-          <li><a href="<?php echo $manufacturer; ?>"><?php echo $text_manufacturer; ?></a></li>
-          <li><a href="<?php echo $download; ?>"><?php echo $text_download; ?></a></li>
-          <li><a href="<?php echo $review; ?>"><?php echo $text_review; ?></a></li>
+          <li class="hide-me"><a href="<?php echo $option; ?>"><?php echo $text_option; ?></a></li>
+          <li class="hide-me"><a href="<?php echo $manufacturer; ?>"><?php echo $text_manufacturer; ?></a></li>
+          <li class="hide-me"><a href="<?php echo $download; ?>"><?php echo $text_download; ?></a></li>
+          <li class="hide-me"><a href="<?php echo $review; ?>"><?php echo $text_review; ?></a></li>
           <li><a href="<?php echo $information; ?>"><?php echo $text_information; ?></a></li>
         </ul>
       </li>
@@ -87,27 +87,21 @@ $(document).ready(function(){
           <li><a href="<?php echo $module; ?>"><?php echo $text_module; ?></a></li>
           <li><a href="<?php echo $shipping; ?>"><?php echo $text_shipping; ?></a></li>
           <li><a href="<?php echo $payment; ?>"><?php echo $text_payment; ?></a></li>
-          <li><a href="<?php echo $total; ?>"><?php echo $text_total; ?></a></li>
-          <li><a href="<?php echo $feed; ?>"><?php echo $text_feed; ?></a></li>
+          <li class="hide-me"><a href="<?php echo $total; ?>"><?php echo $text_total; ?></a></li>
+          <li class="hide-me"><a href="<?php echo $feed; ?>"><?php echo $text_feed; ?></a></li>
         </ul>
       </li>
       <li id="sale"><a class="top"><?php echo $text_sale; ?></a>
         <ul>
           <li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
-          <li><a href="<?php echo $return; ?>"><?php echo $text_return; ?></a></li>
-          <li><a class="parent"><?php echo $text_customer; ?></a>
-            <ul>
-              <li><a href="<?php echo $customer; ?>"><?php echo $text_customer; ?></a></li>
-              <li><a href="<?php echo $customer_group; ?>"><?php echo $text_customer_group; ?></a></li>
-              <li><a href="<?php echo $customer_ban_ip; ?>"><?php echo $text_customer_ban_ip; ?></a></li>
-            </ul>
-          </li>
-          <li><a href="<?php echo $affiliate; ?>"><?php echo $text_affiliate; ?></a></li>
+          <li class="hide-me"><a href="<?php echo $return; ?>"><?php echo $text_return; ?></a></li>
+          <li><a href="<?php echo $customer; ?>"><?php echo $text_customer; ?></a></li>
+          <li class="hide-me"><a href="<?php echo $affiliate; ?>"><?php echo $text_affiliate; ?></a></li>
           <li><a href="<?php echo $coupon; ?>"><?php echo $text_coupon; ?></a></li>
-          <li><a class="parent"><?php echo $text_voucher; ?></a>
+          <li class="hide-me"><a class="parent"><?php echo $text_voucher; ?></a>
             <ul>
-              <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
-              <li><a href="<?php echo $voucher_theme; ?>"><?php echo $text_voucher_theme; ?></a></li>
+              <li class="hide-me"><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
+              <li class="hide-me"><a href="<?php echo $voucher_theme; ?>"><?php echo $text_voucher_theme; ?></a></li>
             </ul>
           </li>
           <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
@@ -130,11 +124,11 @@ $(document).ready(function(){
           </li>
           <li><a class="parent"><?php echo $text_localisation; ?></a>
             <ul>
-              <li><a href="<?php echo $language; ?>"><?php echo $text_language; ?></a></li>
-              <li><a href="<?php echo $currency; ?>"><?php echo $text_currency; ?></a></li>
-              <li><a href="<?php echo $stock_status; ?>"><?php echo $text_stock_status; ?></a></li>
+              <li class="hide-me"><a href="<?php echo $language; ?>"><?php echo $text_language; ?></a></li>
+              <li class="hide-me"><a href="<?php echo $currency; ?>"><?php echo $text_currency; ?></a></li>
+              <li class="hide-me"><a href="<?php echo $stock_status; ?>"><?php echo $text_stock_status; ?></a></li>
               <li><a href="<?php echo $order_status; ?>"><?php echo $text_order_status; ?></a></li>
-              <li><a class="parent"><?php echo $text_return; ?></a>
+              <li class="hide-me"><a class="parent"><?php echo $text_return; ?></a>
                 <ul>
                   <li><a href="<?php echo $return_status; ?>"><?php echo $text_return_status; ?></a></li>
                   <li><a href="<?php echo $return_action; ?>"><?php echo $text_return_action; ?></a></li>
@@ -142,21 +136,21 @@ $(document).ready(function(){
                 </ul>
               </li>
               <li><a href="<?php echo $country; ?>"><?php echo $text_country; ?></a></li>
-              <li><a href="<?php echo $zone; ?>"><?php echo $text_zone; ?></a></li>
-              <li><a href="<?php echo $geo_zone; ?>"><?php echo $text_geo_zone; ?></a></li>
-              <li><a class="parent"><?php echo $text_tax; ?></a>
+              <li class="hide-me"><a href="<?php echo $zone; ?>"><?php echo $text_zone; ?></a></li>
+              <li class="hide-me"><a href="<?php echo $geo_zone; ?>"><?php echo $text_geo_zone; ?></a></li>
+              <li class="hide-me"><a class="parent"><?php echo $text_tax; ?></a>
                 <ul>
-                  <li><a href="<?php echo $tax_class; ?>"><?php echo $text_tax_class; ?></a></li>
-                  <li><a href="<?php echo $tax_rate; ?>"><?php echo $text_tax_rate; ?></a></li>
+                  <li class="hide-me"><a href="<?php echo $tax_class; ?>"><?php echo $text_tax_class; ?></a></li>
+                  <li class="hide-me"><a href="<?php echo $tax_rate; ?>"><?php echo $text_tax_rate; ?></a></li>
                 </ul>
               </li>
-              <li><a href="<?php echo $length_class; ?>"><?php echo $text_length_class; ?></a></li>
-              <li><a href="<?php echo $weight_class; ?>"><?php echo $text_weight_class; ?></a></li>
+              <li class="hide-me"><a href="<?php echo $length_class; ?>"><?php echo $text_length_class; ?></a></li>
+              <li class="hide-me"><a href="<?php echo $weight_class; ?>"><?php echo $text_weight_class; ?></a></li>
             </ul>
           </li>
-          <li><a href="<?php echo $error_log; ?>"><?php echo $text_error_log; ?></a></li>
-          <li><a href="<?php echo $backup; ?>"><?php echo $text_backup; ?></a></li>
-          <li><a href="<?php echo $free_limit; ?>">Ll&iacute;mite entrega gratuita</a></li>
+          <li class="hide-me"><a href="<?php echo $error_log; ?>"><?php echo $text_error_log; ?></a></li>
+          <li class="hide-me"><a href="<?php echo $backup; ?>"><?php echo $text_backup; ?></a></li>
+          <li class="hide-me"><a href="<?php echo $free_limit; ?>">Ll&iacute;mite entrega gratuita</a></li>
         </ul>
       </li>
       <li id="reports"><a class="top"><?php echo $text_reports; ?></a>
@@ -164,9 +158,9 @@ $(document).ready(function(){
           <li><a class="parent"><?php echo $text_sale; ?></a>
             <ul>
               <li><a href="<?php echo $report_sale_order; ?>"><?php echo $text_report_sale_order; ?></a></li>
-              <li><a href="<?php echo $report_sale_tax; ?>"><?php echo $text_report_sale_tax; ?></a></li>
+              <li class="hide-me"><a href="<?php echo $report_sale_tax; ?>"><?php echo $text_report_sale_tax; ?></a></li>
               <li><a href="<?php echo $report_sale_shipping; ?>"><?php echo $text_report_sale_shipping; ?></a></li>
-              <li><a href="<?php echo $report_sale_return; ?>"><?php echo $text_report_sale_return; ?></a></li>
+              <li class="hide-me"><a href="<?php echo $report_sale_return; ?>"><?php echo $text_report_sale_return; ?></a></li>
               <li><a href="<?php echo $report_sale_coupon; ?>"><?php echo $text_report_sale_coupon; ?></a></li>
             </ul>
           </li>
@@ -180,22 +174,10 @@ $(document).ready(function(){
             <ul>
               <li><a href="<?php echo $report_customer_online; ?>"><?php echo $text_report_customer_online; ?></a></li>
               <li><a href="<?php echo $report_customer_order; ?>"><?php echo $text_report_customer_order; ?></a></li>
-              <li><a href="<?php echo $report_customer_reward; ?>"><?php echo $text_report_customer_reward; ?></a></li>
-              <li><a href="<?php echo $report_customer_credit; ?>"><?php echo $text_report_customer_credit; ?></a></li>
+              <li class="hide-me"><a href="<?php echo $report_customer_reward; ?>"><?php echo $text_report_customer_reward; ?></a></li>
+              <li class="hide-me"><a href="<?php echo $report_customer_credit; ?>"><?php echo $text_report_customer_credit; ?></a></li>
             </ul>
           </li>
-          <li><a class="parent"><?php echo $text_affiliate; ?></a>
-            <ul>
-              <li><a href="<?php echo $report_affiliate_commission; ?>"><?php echo $text_report_affiliate_commission; ?></a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li id="help"><a class="top"><?php echo $text_help; ?></a>
-        <ul>
-          <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_opencart; ?></a></li>
-          <li><a href="http://www.opencart.com/index.php?route=documentation/introduction" target="_blank"><?php echo $text_documentation; ?></a></li>
-          <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
         </ul>
       </li>
     </ul>

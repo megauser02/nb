@@ -558,3 +558,4 @@ table.form > tbody > tr > td {
 	position: relative;
 	top: 3px;
 }
+.hide-me { display: none;}
