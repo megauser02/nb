@@ -919,7 +919,7 @@ label {
 #menu > ul > li {
 	position: relative;
 	float: left;
-	z-index: 20;
+	z-index: 100;
 	padding: 6px 2px 2px 0px;
 }
 #menu > ul > li:hover {
@@ -940,6 +940,7 @@ label {
 {
         border-left: solid 1px #b6b4ad;
 }
+
 #menu > ul > li:hover > a {
 }
 #menu > ul > li > div {
@@ -947,7 +948,7 @@ label {
 	background: #FFFFFF;
 	position: absolute;
 	z-index: 5;
-	padding: 5px;
+	padding: 0;
 	border: 1px solid #dcdede;
         border-top: none;
 	border-radius: 0px 0px 5px 5px;
@@ -957,6 +958,29 @@ label {
 }
 #menu > ul > li > div > ul {
 	display: table-cell;
+        padding: 15px 5px 80px 5px;
+}
+#menu > ul > li > div.facial > ul, #menu > ul > li > div.corporal > ul { 
+        background: url(../image/separator-menu.png) right 45px no-repeat;
+}
+#menu > ul > li > div.facial > ul + ul, #menu > ul > li > div.corporal > ul + ul { 
+        background: none;
+}
+#menu > ul > li > div.manicure > ul { 
+        padding-bottom: 100px;
+}
+#menu > ul > li > div.aromaterapia > ul { 
+}
+#menu > ul > li > div.aromaterapia {
+        overflow: hidden;
+}
+#menu > ul > li > div.aromaterapia > ul{  
+        padding-bottom: 95px;
+}
+#menu > ul > li > div.aromaterapia > ul + ul {  
+        position: absolute;
+        right: 0;
+        top: 50px;
 }
 #menu > ul > li ul + ul {
 	padding-left: 20px;
@@ -970,11 +994,20 @@ label {
 	min-width: 120px;
 }
 #menu > ul > li ul > li > a:hover {
-	color: #7d7d7d;
+/*	color: #7d7d7d;*/
 }
 #menu > ul > li > div > ul > li > a {
 	color: #eb8989;
+        font-size: 13px;
 }
+#menu > ul > li > div > ul > li > a.title {
+        color: #787777;
+        cursor: default;
+}
+#menu > ul > li > div > ul > li > a.title:hover {
+        color: #787777;
+}
+.top-menu { cursor: default;}
 .breadcrumb {
 	color: #CCCCCC;
 	margin-bottom: 10px;

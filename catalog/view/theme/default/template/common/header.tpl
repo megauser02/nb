@@ -70,53 +70,152 @@ DD_belatedPNG.fix('#logo img');
 <div id="menu">
   <ul>
     <?php foreach ($categories as $category) { ?>
-    <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
+    <li><a href="<?php echo $category['href']; ?>" class="top-menu" onclick="return false;"><?php echo $category['name']; ?></a>
         
         <?php  if($category['type_menu_name'] == 'facial' ) { ?>
-            <div>
+            <div <?php if($category['type_menu_image']) { echo 'style=" ' . $category['image_width'] . ' background: #fff url(' . $category['type_menu_image'] . ') center bottom no-repeat;"'; } ?> class="facial">
                 <ul>
-                    <li>1</li>
-                    <li>2</li>
+                    <li><a href="" class="title" onclick="return false;">Tratamientos coadyuvantes para diversos problemas de la piel</a></li>
+                    <li><a href="">L&iacute;nea Sensi - Uva | Todo Tipo de Piel especialmente sensible</a></li>
+                    <li><a href="">L&iacute;nea Skin White | Piel Hiperpigmentada</a></li>
+                    <li><a href="">L&iacute;nea Purificante | Piel Grasa y Acn&eacute;ica</a></li>
+                    <li class="space"><a href="" class="title">Tratamiento para piel grasa en zona "T"</a></li>
+                    <li><a href="">L&iacute;nea Bot&aacute;nica | Piel Mixta</a></li>
+                    <li class="space"><a href="" class="title">L&iacute;nea para Caballeros</a></li>
+                    <li><a href="">L&iacute;nea Natural Man | Todo tipo de Piel</a></li>
+                </ul>
+                <ul>
+                    <li><a href="" class="title" onclick="return false;">Lineas Anti-Envejecimiento</a></li>
+                    <li><a href="">L&iacute;nea Hydrafrutal | Preventica Piel Seca</a></li>
+                    <li><a href="">L&iacute;nea Platina | Piel Madura</a></li>
+                    <li><a href="">Productos Platina Plus | Piel Madura y Desvitalizada</a></li>
+                    <li><a href="">L&iacute;nea C&eacute;lulas Madre Frutales | Piel Seca Deshidratada</a></li>
+                    <li class="space"><a href="" class="title" onclick="return false;">Productos Complementarios | Todo tipo de Piel</a></li>
+                    <li><a href="">Para Ojos</a></li>
+                    <li><a href="">Exfoliantes Faciales</a></li>
+                    <li><a href="">Roc&iacute;os Refrescantes</a></li>
+                    <li><a href="">Auxiliares | Regenerantes, oxigenantes y matificantes)</a></li>
                 </ul>
             </div>
         <?php  } ?>
         <?php  if($category['type_menu_name'] == 'corporal' ) { ?>
-            <div>
+            <div <?php if($category['type_menu_image']) { echo 'style=" ' . $category['image_width'] . ' background: #fff url(' . $category['type_menu_image'] . ') center bottom no-repeat;"'; } ?> class="corporal">
                 <ul>
-                    <li>1</li>
-                    <li>2</li>
+                    <li><a href="" class="title" onclick="return false;">L&iacute;neas Hol&iacute;sticas</a></li>
+                    <li><a href="">L&iacute;nea T&eacute; Verde y Jengibre</a></li>
+                    <li><a href="">L&iacute;nea Lavanda y Romero</a></li>
+                    <li class="space"><a href="" class="title" onclick="return false;">L&iacute;neas Frutales</a></li>
+                    <li><a href="">L&iacute;neas Espuma de Ángel</a></li>
+                    <li><a href="">L&iacute;nea Champagne</a></li>
+                    <li><a href="">L&iacute;nea Manzana Verde y Canela</a></li>
+                    <li><a href="">L&iacute;nea Tropical</a></li>
+                </ul>
+                <ul>
+                    <li><a href="" class="title" onclick="return false;">L&iacute;neas M&iacute;sticas Mexicanas</a></li>
+                    <li><a href="">L&iacute;nea Copal</a></li>
+                    <li><a href="">L&iacute;nea Teocalli (Azteca)</a></li>
+                    <li><a href="">L&iacute;nea Yuc Hab (Maya)</a></li>
+                    <li class="space"><a href="" class="title" onclick="return false;">Tratamientos Espec&iacute;ficos</a></li>
+                    <li><a href="">L&iacute;nea Caf&eacute; - Anticelul&iacute;tica y Drenante</a></li>
+                    <li><a href="">L&iacute;nea Chocolate - Antidepresiva</a></li>
+                    <li><a href="">L&iacute;nea Orgánica Sábica y Nony - Antioxidante y Multivitam&iacute;nica </a></li>
+                    <li><a href="">Arcillas - Remineralizantes</a></li>
+                    <li><a href="">L&iacute;nea Orgaloe - Piel Asoleada</a></li>
                 </ul>
             </div>
         <?php  } ?>
         <?php  if($category['type_menu_name'] == 'mantequilla' ) { ?>
-            <div>
+            <div <?php if($category['type_menu_image']) { echo 'style=" ' . $category['image_width'] . ' background: #fff url(' . $category['type_menu_image'] . ') center bottom no-repeat;"'; } ?> class="mantequilla">
                 <ul>
-                    <li>1</li>
-                    <li>2</li>
+                    <li><a href="" class="title" onclick="return false;">Mantequilla</a></li>
+                    <li><a href="">Mantequilla de S&aacute;bila para Masaje</a></li>
+                    <li class="space"><a href="" class="title" onclick="return false;">Aceites Energizantes</a></li>
+                    <li><a href="">Aceite Mandarina</a></li>
+                    <li><a href="">Aceite Champagne</a></li>
+                    <li><a href="">Aceite Caf&eacute;</a></li>
+                    <li><a href="">Aceite Yuc - Hab</a></li>
+                    <li><a href="">Aceite Tropical</a></li>
+                </ul>
+                <ul>
+                    <li><a href="" class="title">Aceites Estimulantes</a></li>
+                    <li><a href="">Aceite Manzana y Canela</a></li>
+                    <li><a href="">Aceite Eucalipto y Menta</a></li>
+                    <li><a href="">Aceite Romero y Albahaca</a></li>
+                    <li><a href="">Aceite Hierbabuena</a></li>
+                    <li><a href="">Aceites Relajantes</a></li>
+                    <li class="space"><a href="" class="title">Aceites Relajantes</a></li>
+                    <li><a href="">Aceite Lavanda y Romero</a></li>
+                    <li><a href="">Aceite Flores</a></li>
+                    <li><a href="">Aceite Rosas</a></li>
+                </ul>
+                <ul>
+                    <li><a href="" class="title">Aceite Revitalizantes</a></li>
+                    <li><a href="">Aceite T&eacute; Verde y Jengibre</a></li>
+                    <li><a href="">Aceite de Chocolate</a></li>
+                    <li><a href="">Aceite Espuma de &Aacute;ngel</a></li>
+                    <li><a href="">Aceite Copal</a></li>
+                    <li><a href="">Aceite Teocalli</a></li>
                 </ul>
             </div>
         <?php  } ?>
         <?php  if($category['type_menu_name'] == 'manicure' ) { ?>
-            <div>
+            <div <?php if($category['type_menu_image']) { echo 'style=" ' . $category['image_width'] . ' background: #fff url(' . $category['type_menu_image'] . ') center bottom no-repeat;"'; } ?> class="manicure">
                 <ul>
-                    <li>1</li>
-                    <li>2</li>
+                    <li class="title"><a href="" onclick="return false;">L&iacute;nea Manicure & Pedicure Spa</a></li>
+                    <li><a href="">Bamb&uacute; y T&eacute; Blanco - Pies y Manos</a></li>
+                    <li><a href="">Scrub Bamb&uacute; y T&eacute; Blanco</a></li>
+                    <li><a href="">Removedor de C&uacute;ticula</a></li>
+                    <li><a href="">Removedor de Callos</a></li>
+                    <li><a href="">Mus Bamb&uacute; y T&eacute; Blanco</a></li>
+                    <li><a href="">Silmani FPS 10</a></li>
+                    <li><a href="">Foot Cream with Karinte Bamb&uacute; y T&eacute; Blanco</a></li>
                 </ul>
             </div>
         <?php  } ?>
         <?php  if($category['type_menu_name'] == 'aromaterapia' ) { ?>
-            <div>
+            <div <?php if($category['type_menu_image']) { echo 'style=" ' . $category['image_width'] . ' background: #fff url(' . $category['type_menu_image'] . ') center bottom no-repeat;"'; } ?> class="aromaterapia">
                 <ul>
-                    <li>1</li>
-                    <li>2</li>
+                    <li><a href="">Natual Relax / Roc&iacute;o Ambientador</a></li>
+                    <li><a href="" class="title" onclick="return false;">Aceites Esenciales</a></li>
+                    <li><a href="">Albahaca</a></li>
+                    <li><a href="">Romero</a></li>
+                    <li><a href="">Bergamota</a></li>
+                    <li><a href="">S&aacute;ndalo</a></li>
+                    <li><a href="">Canela</a></li>
+                    <li><a href="">Toronja</a></li>
+                    <li><a href="">Clavo</a></li>
+                    <li><a href="">Ylang Ylang</a></li>
+                    <li><a href="">Eucalipto</a></li>
                 </ul>
+                <ul>
+                    <li><a href="">Lima</a></li>
+                    <li><a href="">Hierbabuena</a></li>
+                    <li><a href="">Mandarina</a></li>
+                    <li><a href="">Lavanda</a></li>
+                    <li><a href="">Menta</a></li>
+                    <li><a href="">Lim&oacute;n</a></li>
+                    <li><a href="">Tea Tree</a></li>
+                    <li><a href="">Tomillo</a></li>
+                </ul>    
             </div>
         <?php  } ?>
         <?php  if($category['type_menu_name'] == 'reductivos' ) { ?>
-            <div>
+            <div <?php if($category['type_menu_image']) { echo 'style=" ' . $category['image_width'] . ' background: #fff url(' . $category['type_menu_image'] . ') center bottom no-repeat;"'; } ?> class="reductivos">
                 <ul>
-                    <li>1</li>
-                    <li>2</li>
+                    <li><a href="">Termocrean | Crema Corporal T&eacute;rmica</a></li>
+                    <li><a href="">Scultanic | Gel Moldeante Corporal</a></li>
+                    <li><a href="">Ampolletas Reductiva | Tratamiento Reductivo</a></li>
+                    <li><a href="">Ampolletas Zone Three | Tratamuento Reafirmante y Anticelul&iacute;tico</a></li>
+                    <li><a href="">Natural Ice | Hielos Reductivos</a></li>
+                    <li><a href="">Mud Focus | Crema Corporal Reafirmante</a></li>
+                    <li><a href="">Loci&oacute;n Venot&oacute;nica | Corporal Drenante</a></li>
+                    <li><a href="">Loci&oacute;n Zone Three | Reductiva, Reafirmante Anticelil&iacute;tica</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Orange Skin | Gel Corporal Anticelul&iacute;tico</a></li>
+                    <li><a href="">Lipo-Cel | Crema Corporal Anticelul&iacute;tico</a></li>
+                    <li><a href="">Lipo Cel 45+ | Crema Corporal Anticelul&iacute;tico</a></li>
+                    <li><a href="">Antimark | Crema Corporal Anti-estr&iacute;as </a></li>
                 </ul>
             </div>
         <?php  } ?>

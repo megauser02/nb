@@ -3,11 +3,14 @@
 define('HTTP_SERVER', 'http://localhost/nb/');
 define('HTTP_SERVER_ADMIN', 'http://localhost/nb/admin');
 define('HTTP_IMG_TEMPLATE', 'http://localhost/nb/catalog/view/theme/default/image/');
+define('HTTP_IMG', 'http://localhost/nb/image/');
+
 
 // HTTPS
 define('HTTPS_SERVER', 'http://localhost/nb/');
 define('HTTPS_SERVER_ADMIN', 'http://localhost/nb/');
 define('HTTPS_IMG_TEMPLATE', 'http://localhost/nb/catalog/view/theme/default/image/');
+define('HTTPS_IMG', 'http://localhost/nb/image/data/');
 
 // DIR
 define('DIR_APPLICATION', 'C:\wamp\www\nb/catalog/');

@@ -132,10 +132,24 @@ class ControllerCommonHeader extends Controller {
 					);						
 				}
                                 
+                                $type_menu_image = false;
+                                $image_width = false;
+                                if( $category['type_menu_image'] )
+                                {
+                                    $type_menu_image = HTTP_IMG . $category['type_menu_image'];
+                                    $get_image_size = getimagesize( DIR_IMAGE . $category['type_menu_image'] );
+                                    if( ($get_image_size) && (isset($get_image_size[0])) )
+                                    {
+                                        $image_width = 'min-width:' . $get_image_size[0] . 'px;';
+                                    }    
+                                }    
+                                
 				// Level 1
 				$this->data['categories'][] = array(
 					'name'     => $category['name'],
                                         'type_menu_name' => $category['type_menu_name'],
+                                        'type_menu_image' => $type_menu_image,
+                                        'image_width' => $image_width,
 					'children' => $children_data,
 					'column'   => $category['column'] ? $category['column'] : 1,
 					'href'     => $this->url->link('product/category', 'path=' . $category['category_id'])
