@@ -71,20 +71,56 @@ DD_belatedPNG.fix('#logo img');
   <ul>
     <?php foreach ($categories as $category) { ?>
     <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
-      <?php if ($category['children']) { ?>
-      <div>
-        <?php for ($i = 0; $i < count($category['children']);) { ?>
-        <ul>
-          <?php $j = $i + ceil(count($category['children']) / $category['column']); ?>
-          <?php for (; $i < $j; $i++) { ?>
-          <?php if (isset($category['children'][$i])) { ?>
-          <li><a href="<?php echo $category['children'][$i]['href']; ?>"><?php echo $category['children'][$i]['name']; ?></a></li>
-          <?php } ?>
-          <?php } ?>
-        </ul>
-        <?php } ?>
-      </div>
-      <?php } ?>
+        
+        <?php  if($category['type_menu_name'] == 'facial' ) { ?>
+            <div>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                </ul>
+            </div>
+        <?php  } ?>
+        <?php  if($category['type_menu_name'] == 'corporal' ) { ?>
+            <div>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                </ul>
+            </div>
+        <?php  } ?>
+        <?php  if($category['type_menu_name'] == 'mantequilla' ) { ?>
+            <div>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                </ul>
+            </div>
+        <?php  } ?>
+        <?php  if($category['type_menu_name'] == 'manicure' ) { ?>
+            <div>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                </ul>
+            </div>
+        <?php  } ?>
+        <?php  if($category['type_menu_name'] == 'aromaterapia' ) { ?>
+            <div>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                </ul>
+            </div>
+        <?php  } ?>
+        <?php  if($category['type_menu_name'] == 'reductivos' ) { ?>
+            <div>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                </ul>
+            </div>
+        <?php  } ?>
+
     </li>
     <?php } ?>
   </ul>

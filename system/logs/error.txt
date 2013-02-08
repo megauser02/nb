@@ -4,3 +4,69 @@
 2013-02-01 18:20:12 - PHP Notice:  Undefined variable: join in C:\wamp\www\nb\catalog\view\theme\default\template\common\footer.tpl on line 38
 2013-02-01 18:21:12 - PHP Notice:  Undefined variable: join in C:\wamp\www\nb\catalog\view\theme\default\template\common\footer.tpl on line 38
 2013-02-01 18:22:08 - PHP Notice:  Undefined variable: join in C:\wamp\www\nb\catalog\view\theme\default\template\common\footer.tpl on line 38
+2013-02-01 22:41:06 - PHP Notice:  Error: Could not load model design/banner_rotator! in C:\wamp\www\nb\system\engine\loader.php on line 48
+2013-02-01 22:45:49 - PHP Notice:  Undefined variable: entry_banner_rotator in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 21
+2013-02-01 22:45:49 - PHP Notice:  Undefined variable: banner_rotators in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 112
+2013-02-01 22:45:49 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 112
+2013-02-01 22:46:31 - PHP Notice:  Undefined variable: entry_banner_rotator in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 21
+2013-02-01 22:46:31 - PHP Notice:  Undefined variable: banner_rotators in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 112
+2013-02-01 22:46:31 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 112
+2013-02-01 22:47:19 - PHP Notice:  Undefined variable: banner_rotators in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 112
+2013-02-01 22:47:19 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 112
+2013-02-01 22:47:48 - PHP Notice:  Undefined variable: banner_rotators in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 112
+2013-02-01 22:47:48 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 112
+2013-02-01 22:48:00 - PHP Notice:  Undefined variable: banner_rotators in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 112
+2013-02-01 22:48:00 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 112
+2013-02-01 22:48:42 - PHP Notice:  Undefined variable: banner_rotators in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 112
+2013-02-01 22:48:42 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 112
+2013-02-01 22:49:05 - PHP Notice:  Undefined index: banner_rotator_id in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 113
+2013-02-01 22:49:05 - PHP Notice:  Undefined index: banner_rotator_id in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 113
+2013-02-01 22:51:02 - PHP Notice:  Undefined index: banner_rotator_id in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 36
+2013-02-01 22:51:02 - PHP Notice:  Undefined index: banner_rotator_id in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 39
+2013-02-01 22:51:02 - PHP Notice:  Undefined index: banner_rotator_id in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 36
+2013-02-01 22:51:02 - PHP Notice:  Undefined index: banner_rotator_id in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 39
+2013-02-01 22:51:02 - PHP Notice:  Undefined index: banner_rotator_id in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 113
+2013-02-01 22:51:02 - PHP Notice:  Undefined index: banner_rotator_id in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 113
+2013-02-01 22:57:51 - PHP Notice:  Undefined index: banner_id in C:\wamp\www\nb\catalog\controller\module\banner_rotator.php on line 13
+2013-02-01 22:57:51 - PHP Notice:  Undefined index: banner_id in C:\wamp\www\nb\catalog\controller\module\banner_rotator.php on line 13
+2013-02-01 22:58:14 - PHP Notice:  Undefined index: banner_id in C:\wamp\www\nb\catalog\controller\module\banner_rotator.php on line 13
+2013-02-01 22:58:14 - PHP Notice:  Undefined variable: banners in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner.tpl on line 2
+2013-02-01 22:58:14 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner.tpl on line 2
+2013-02-01 22:58:14 - PHP Notice:  Undefined index: banner_id in C:\wamp\www\nb\catalog\controller\module\banner_rotator.php on line 13
+2013-02-01 22:58:14 - PHP Notice:  Undefined variable: banners in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner.tpl on line 2
+2013-02-01 22:58:14 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner.tpl on line 2
+2013-02-01 22:58:27 - PHP Notice:  Undefined index: banner_id in C:\wamp\www\nb\catalog\controller\module\banner_rotator.php on line 13
+2013-02-01 22:58:27 - PHP Notice:  Undefined variable: banners in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner.tpl on line 2
+2013-02-01 22:58:27 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner.tpl on line 2
+2013-02-01 22:58:27 - PHP Notice:  Undefined index: banner_id in C:\wamp\www\nb\catalog\controller\module\banner_rotator.php on line 13
+2013-02-01 22:58:27 - PHP Notice:  Undefined variable: banners in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner.tpl on line 2
+2013-02-01 22:58:27 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner.tpl on line 2
+2013-02-01 22:58:56 - PHP Notice:  Undefined index: banner_id in C:\wamp\www\nb\catalog\controller\module\banner_rotator.php on line 13
+2013-02-01 22:58:56 - PHP Notice:  Undefined variable: banners in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner_rotator.tpl on line 2
+2013-02-01 22:58:56 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner_rotator.tpl on line 2
+2013-02-01 22:58:56 - PHP Notice:  Undefined index: banner_id in C:\wamp\www\nb\catalog\controller\module\banner_rotator.php on line 13
+2013-02-01 22:58:56 - PHP Notice:  Undefined variable: banners in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner_rotator.tpl on line 2
+2013-02-01 22:58:56 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner_rotator.tpl on line 2
+2013-02-01 22:59:57 - PHP Notice:  Undefined index: banner_id in C:\wamp\www\nb\catalog\controller\module\banner_rotator.php on line 15
+2013-02-01 22:59:57 - PHP Notice:  Undefined variable: banners in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner_rotator.tpl on line 2
+2013-02-01 22:59:57 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner_rotator.tpl on line 2
+2013-02-01 22:59:57 - PHP Notice:  Undefined index: banner_id in C:\wamp\www\nb\catalog\controller\module\banner_rotator.php on line 15
+2013-02-01 22:59:57 - PHP Notice:  Undefined variable: banners in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner_rotator.tpl on line 2
+2013-02-01 22:59:57 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner_rotator.tpl on line 2
+2013-02-01 23:00:08 - PHP Notice:  Undefined variable: banners in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner_rotator.tpl on line 2
+2013-02-01 23:00:08 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner_rotator.tpl on line 2
+2013-02-01 23:00:08 - PHP Notice:  Undefined variable: banners in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner_rotator.tpl on line 2
+2013-02-01 23:00:08 - PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner_rotator.tpl on line 2
+2013-02-01 23:16:48 - PHP Notice:  Undefined index: banner_rotator_id in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 36
+2013-02-01 23:16:48 - PHP Notice:  Undefined index: banner_rotator_id in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 39
+2013-02-01 23:16:48 - PHP Notice:  Undefined index: banner_rotator_id in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 36
+2013-02-01 23:16:48 - PHP Notice:  Undefined index: banner_rotator_id in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 39
+2013-02-01 23:16:48 - PHP Notice:  Undefined index: banner_rotator_id in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 113
+2013-02-01 23:16:48 - PHP Notice:  Undefined index: banner_rotator_id in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 113
+2013-02-01 23:18:22 - PHP Notice:  Undefined index: banner_id in C:\wamp\www\nb\catalog\controller\module\banner_rotator.php on line 15
+2013-02-01 23:18:22 - PHP Notice:  Undefined index: banner_id in C:\wamp\www\nb\catalog\controller\module\banner_rotator.php on line 15
+2013-02-01 23:19:39 - PHP Notice:  Undefined index: banner_id in C:\wamp\www\nb\catalog\controller\module\banner_rotator.php on line 15
+2013-02-01 23:19:39 - PHP Notice:  Undefined index: banner_id in C:\wamp\www\nb\catalog\controller\module\banner_rotator.php on line 15
+2013-02-01 23:19:47 - PHP Notice:  Undefined index: banner_id in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 36
+2013-02-01 23:19:47 - PHP Notice:  Undefined index: banner_id in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 36
+2013-02-01 23:35:30 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by rand()' at line 1<br />Error No: 1064<br />SELECT * FROM oc_banner_image bi LEFT JOIN oc_banner_image_description bid ON (bi.banner_image_id  = bid.banner_image_id) WHERE bi.banner_id = '9' AND bid.language_id = '1' limit 3 order by rand()  in C:\wamp\www\nb\system\database\mysql.php on line 50

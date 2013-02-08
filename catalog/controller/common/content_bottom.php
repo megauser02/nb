@@ -69,6 +69,7 @@ class ControllerCommonContentBottom extends Controller {
 		$this->data['modules'] = array();
 		
 		foreach ($module_data as $module) {
+                    
 			$module = $this->getChild('module/' . $module['code'], $module['setting']);
 			
 			if ($module) {
