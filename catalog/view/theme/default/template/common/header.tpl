@@ -76,7 +76,7 @@ DD_belatedPNG.fix('#logo img');
             <div <?php if($category['type_menu_image']) { echo 'style=" ' . $category['image_width'] . ' background: #fff url(' . $category['type_menu_image'] . ') center bottom no-repeat;"'; } ?> class="facial">
                 <ul>
                     <li><a href="" class="title" onclick="return false;">Tratamientos coadyuvantes para diversos problemas de la piel</a></li>
-                    <li><a href="">L&iacute;nea Sensi - Uva | Todo Tipo de Piel especialmente sensible</a></li>
+                    <li><a href="<?php echo $this->url->link('product/category', 'path=20_59_60', 'SSL'); ?>">L&iacute;nea Sensi - Uva | Todo Tipo de Piel especialmente sensible</a></li>
                     <li><a href="">L&iacute;nea Skin White | Piel Hiperpigmentada</a></li>
                     <li><a href="">L&iacute;nea Purificante | Piel Grasa y Acn&eacute;ica</a></li>
                     <li class="space"><a href="" class="title">Tratamiento para piel grasa en zona "T"</a></li>
@@ -128,33 +128,33 @@ DD_belatedPNG.fix('#logo img');
             <div <?php if($category['type_menu_image']) { echo 'style=" ' . $category['image_width'] . ' background: #fff url(' . $category['type_menu_image'] . ') center bottom no-repeat;"'; } ?> class="mantequilla">
                 <ul>
                     <li><a href="" class="title" onclick="return false;">Mantequilla</a></li>
-                    <li><a href="">Mantequilla de S&aacute;bila para Masaje</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=50', 'SSL'); ?>">Mantequilla de S&aacute;bila para Masaje</a></li>
                     <li class="space"><a href="" class="title" onclick="return false;">Aceites Energizantes</a></li>
-                    <li><a href="">Aceite Mandarina</a></li>
-                    <li><a href="">Aceite Champagne</a></li>
-                    <li><a href="">Aceite Caf&eacute;</a></li>
-                    <li><a href="">Aceite Yuc - Hab</a></li>
-                    <li><a href="">Aceite Tropical</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=51', 'SSL'); ?>">Aceite Mandarina</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=52', 'SSL'); ?>">Aceite Champagne</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=53', 'SSL'); ?>">Aceite Caf&eacute;</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=54', 'SSL'); ?>">Aceite Yuc - Hab</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=55', 'SSL'); ?>">Aceite Tropical</a></li>
                 </ul>
                 <ul>
                     <li><a href="" class="title">Aceites Estimulantes</a></li>
-                    <li><a href="">Aceite Manzana y Canela</a></li>
-                    <li><a href="">Aceite Eucalipto y Menta</a></li>
-                    <li><a href="">Aceite Romero y Albahaca</a></li>
-                    <li><a href="">Aceite Hierbabuena</a></li>
-                    <li><a href="">Aceites Relajantes</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=57', 'SSL'); ?>">Aceite Manzana y Canela</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=58', 'SSL'); ?>">Aceite Eucalipto y Menta</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=59', 'SSL'); ?>">Aceite Romero y Albahaca</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=61', 'SSL'); ?>">Aceite Hierbabuena</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=62', 'SSL'); ?>">Aceites Relajantes</a></li>
                     <li class="space"><a href="" class="title">Aceites Relajantes</a></li>
-                    <li><a href="">Aceite Lavanda y Romero</a></li>
-                    <li><a href="">Aceite Flores</a></li>
-                    <li><a href="">Aceite Rosas</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=63', 'SSL'); ?>">Aceite Lavanda y Romero</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=64', 'SSL'); ?>">Aceite Flores</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=65', 'SSL'); ?>">Aceite Rosas</a></li>
                 </ul>
                 <ul>
                     <li><a href="" class="title">Aceite Revitalizantes</a></li>
-                    <li><a href="">Aceite T&eacute; Verde y Jengibre</a></li>
-                    <li><a href="">Aceite de Chocolate</a></li>
-                    <li><a href="">Aceite Espuma de &Aacute;ngel</a></li>
-                    <li><a href="">Aceite Copal</a></li>
-                    <li><a href="">Aceite Teocalli</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=66', 'SSL'); ?>">Aceite T&eacute; Verde y Jengibre</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=67', 'SSL'); ?>">Aceite de Chocolate</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=68', 'SSL'); ?>">Aceite Espuma de &Aacute;ngel</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=69', 'SSL'); ?>">Aceite Copal</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=70', 'SSL'); ?>">Aceite Teocalli</a></li>
                 </ul>
             </div>
         <?php  } ?>
@@ -162,60 +162,60 @@ DD_belatedPNG.fix('#logo img');
             <div <?php if($category['type_menu_image']) { echo 'style=" ' . $category['image_width'] . ' background: #fff url(' . $category['type_menu_image'] . ') center bottom no-repeat;"'; } ?> class="manicure">
                 <ul>
                     <li class="title"><a href="" onclick="return false;">L&iacute;nea Manicure & Pedicure Spa</a></li>
-                    <li><a href="">Bamb&uacute; y T&eacute; Blanco - Pies y Manos</a></li>
-                    <li><a href="">Scrub Bamb&uacute; y T&eacute; Blanco</a></li>
-                    <li><a href="">Removedor de C&uacute;ticula</a></li>
-                    <li><a href="">Removedor de Callos</a></li>
-                    <li><a href="">Mus Bamb&uacute; y T&eacute; Blanco</a></li>
-                    <li><a href="">Silmani FPS 10</a></li>
-                    <li><a href="">Foot Cream with Karinte Bamb&uacute; y T&eacute; Blanco</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=71', 'SSL'); ?>">Bamb&uacute; y T&eacute; Blanco - Pies y Manos</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=72', 'SSL'); ?>">Scrub Bamb&uacute; y T&eacute; Blanco</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=73', 'SSL'); ?>">Removedor de C&uacute;ticula</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=74', 'SSL'); ?>">Removedor de Callos</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=75', 'SSL'); ?>">Mus Bamb&uacute; y T&eacute; Blanco</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=76', 'SSL'); ?>">Silmani FPS 10</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=77', 'SSL'); ?>">Foot Cream with Karinte Bamb&uacute; y T&eacute; Blanco</a></li>
                 </ul>
             </div>
         <?php  } ?>
         <?php  if($category['type_menu_name'] == 'aromaterapia' ) { ?>
             <div <?php if($category['type_menu_image']) { echo 'style=" ' . $category['image_width'] . ' background: #fff url(' . $category['type_menu_image'] . ') center bottom no-repeat;"'; } ?> class="aromaterapia">
                 <ul>
-                    <li><a href="">Natual Relax / Roc&iacute;o Ambientador</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=78', 'SSL'); ?>">Natural Relax / Roc&iacute;o Ambientador</a></li>
                     <li><a href="" class="title" onclick="return false;">Aceites Esenciales</a></li>
-                    <li><a href="">Albahaca</a></li>
-                    <li><a href="">Romero</a></li>
-                    <li><a href="">Bergamota</a></li>
-                    <li><a href="">S&aacute;ndalo</a></li>
-                    <li><a href="">Canela</a></li>
-                    <li><a href="">Toronja</a></li>
-                    <li><a href="">Clavo</a></li>
-                    <li><a href="">Ylang Ylang</a></li>
-                    <li><a href="">Eucalipto</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=79', 'SSL'); ?>">Albahaca</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=80', 'SSL'); ?>">Romero</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=81', 'SSL'); ?>">Bergamota</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=82', 'SSL'); ?>">S&aacute;ndalo</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=83', 'SSL'); ?>">Canela</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=84', 'SSL'); ?>">Toronja</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=85', 'SSL'); ?>">Clavo</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=86', 'SSL'); ?>">Ylang Ylang</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=87', 'SSL'); ?>">Eucalipto</a></li>
                 </ul>
                 <ul>
-                    <li><a href="">Lima</a></li>
-                    <li><a href="">Hierbabuena</a></li>
-                    <li><a href="">Mandarina</a></li>
-                    <li><a href="">Lavanda</a></li>
-                    <li><a href="">Menta</a></li>
-                    <li><a href="">Lim&oacute;n</a></li>
-                    <li><a href="">Tea Tree</a></li>
-                    <li><a href="">Tomillo</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=88', 'SSL'); ?>">Lima</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=89', 'SSL'); ?>">Hierbabuena</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=90', 'SSL'); ?>">Mandarina</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=91', 'SSL'); ?>">Lavanda</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=92', 'SSL'); ?>">Menta</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=93', 'SSL'); ?>">Lim&oacute;n</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=94', 'SSL'); ?>">Tea Tree</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=95', 'SSL'); ?>">Tomillo</a></li>
                 </ul>    
             </div>
         <?php  } ?>
         <?php  if($category['type_menu_name'] == 'reductivos' ) { ?>
             <div <?php if($category['type_menu_image']) { echo 'style=" ' . $category['image_width'] . ' background: #fff url(' . $category['type_menu_image'] . ') center bottom no-repeat;"'; } ?> class="reductivos">
                 <ul>
-                    <li><a href="">Termocrean | Crema Corporal T&eacute;rmica</a></li>
-                    <li><a href="">Scultanic | Gel Moldeante Corporal</a></li>
-                    <li><a href="">Ampolletas Reductiva | Tratamiento Reductivo</a></li>
-                    <li><a href="">Ampolletas Zone Three | Tratamuento Reafirmante y Anticelul&iacute;tico</a></li>
-                    <li><a href="">Natural Ice | Hielos Reductivos</a></li>
-                    <li><a href="">Mud Focus | Crema Corporal Reafirmante</a></li>
-                    <li><a href="">Loci&oacute;n Venot&oacute;nica | Corporal Drenante</a></li>
-                    <li><a href="">Loci&oacute;n Zone Three | Reductiva, Reafirmante Anticelil&iacute;tica</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=96', 'SSL'); ?>">Termocrean | Crema Corporal T&eacute;rmica</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=97', 'SSL'); ?>">Scultanic | Gel Moldeante Corporal</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=98', 'SSL'); ?>">Ampolletas Reductiva | Tratamiento Reductivo</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=99', 'SSL'); ?>">Ampolletas Zone Three | Tratamuento Reafirmante y Anticelul&iacute;tico</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=100', 'SSL'); ?>">Natural Ice | Hielos Reductivos</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=101', 'SSL'); ?>">Mud Focus | Crema Corporal Reafirmante</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=102', 'SSL'); ?>">Loci&oacute;n Venot&oacute;nica | Corporal Drenante</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=103', 'SSL'); ?>">Loci&oacute;n Zone Three | Reductiva, Reafirmante Anticelil&iacute;tica</a></li>
                 </ul>
                 <ul>
-                    <li><a href="">Orange Skin | Gel Corporal Anticelul&iacute;tico</a></li>
-                    <li><a href="">Lipo-Cel | Crema Corporal Anticelul&iacute;tico</a></li>
-                    <li><a href="">Lipo Cel 45+ | Crema Corporal Anticelul&iacute;tico</a></li>
-                    <li><a href="">Antimark | Crema Corporal Anti-estr&iacute;as </a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=104', 'SSL'); ?>">Orange Skin | Gel Corporal Anticelul&iacute;tico</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=105', 'SSL'); ?>">Lipo-Cel | Crema Corporal Anticelul&iacute;tico</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=106', 'SSL'); ?>">Lipo Cel 45+ | Crema Corporal Anticelul&iacute;tico</a></li>
+                    <li><a href="<?php echo $this->url->link('product/product', 'product_id=107', 'SSL'); ?>">Antimark | Crema Corporal Anti-estr&iacute;as </a></li>
                 </ul>
             </div>
         <?php  } ?>

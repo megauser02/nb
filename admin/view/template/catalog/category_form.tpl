@@ -110,6 +110,13 @@
                   <a onclick="image_upload('image', 'thumb');"><?php echo $text_browse; ?></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a onclick="$('#thumb').attr('src', '<?php echo $no_image; ?>'); $('#image').attr('value', '');"><?php echo $text_clear; ?></a></div></td>
             </tr>
             <tr>
+              <td>Imagen men&uacute;</td>
+              <td valign="top"><div class="type_menu_image"><img src="<?php echo $type_menu_image_thumb; ?>" alt="" id="type_menu_image_thumb" />
+                  <input type="hidden" name="type_menu_image" value="<?php echo $type_menu_image; ?>" id="type_menu_image" />
+                  <br />
+                  <a onclick="image_upload('type_menu_image', 'type_menu_image_thumb');"><?php echo $text_browse; ?></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a onclick="$('#type_menu_image_thumb').attr('src', '<?php echo $no_type_menu_image; ?>'); $('#type_menu_image').attr('value', '');"><?php echo $text_clear; ?></a></div></td>
+            </tr>
+            <tr>
               <td><?php echo $entry_top; ?></td>
               <td><?php if ($top) { ?>
                 <input type="checkbox" name="top" value="1" checked="checked" />
