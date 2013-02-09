@@ -567,6 +567,7 @@ h1, .welcome {
 	font-size: 32px;
 	font-weight: normal;
 	text-shadow: 0 0 1px rgba(0, 0, 0, .01);
+        clear: both;
 }
 h2 {
 	color: #000000;
@@ -1011,6 +1012,18 @@ label {
 .breadcrumb {
 	color: #CCCCCC;
 	margin-bottom: 10px;
+        border: solid 1px #c7c7c7;
+        float: left;clear: both;
+}
+.breadcrumb a:first-child {
+        color: #DC9A9A;
+        padding-left: 18px;
+}
+.breadcrumb a {
+        color: #778708;
+        font-size: 14px;
+        text-decoration: none;
+        padding: 10px;
 }
 .success, .warning, .attention, .information {
 	padding: 10px 10px 10px 33px;
