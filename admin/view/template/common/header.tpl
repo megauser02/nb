@@ -104,7 +104,7 @@ $(document).ready(function(){
               <li class="hide-me"><a href="<?php echo $voucher_theme; ?>"><?php echo $text_voucher_theme; ?></a></li>
             </ul>
           </li>
-          <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
+          <li class="hide-me"><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
         </ul>
       </li>
       <li id="system"><a class="top"><?php echo $text_system; ?></a>
@@ -164,20 +164,9 @@ $(document).ready(function(){
               <li><a href="<?php echo $report_sale_coupon; ?>"><?php echo $text_report_sale_coupon; ?></a></li>
             </ul>
           </li>
-          <li><a class="parent"><?php echo $text_product; ?></a>
-            <ul>
-              <li><a href="<?php echo $report_product_viewed; ?>"><?php echo $text_report_product_viewed; ?></a></li>
-              <li><a href="<?php echo $report_product_purchased; ?>"><?php echo $text_report_product_purchased; ?></a></li>
-            </ul>
+          <li><a href="<?php echo $report_product_viewed; ?>"><?php echo $text_product; ?></a>
           </li>
-          <li><a class="parent"><?php echo $text_customer; ?></a>
-            <ul>
-              <li><a href="<?php echo $report_customer_online; ?>"><?php echo $text_report_customer_online; ?></a></li>
-              <li><a href="<?php echo $report_customer_order; ?>"><?php echo $text_report_customer_order; ?></a></li>
-              <li class="hide-me"><a href="<?php echo $report_customer_reward; ?>"><?php echo $text_report_customer_reward; ?></a></li>
-              <li class="hide-me"><a href="<?php echo $report_customer_credit; ?>"><?php echo $text_report_customer_credit; ?></a></li>
-            </ul>
-          </li>
+          <li><a href="<?php echo $report_customer_order; ?>"><?php echo $text_customer; ?></a></li>
         </ul>
       </li>
     </ul>

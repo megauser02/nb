@@ -1,44 +1,44 @@
 <?php
 // Heading
-$_['heading_title']                 = 'Dashboard';
+$_['heading_title']                 = 'Panel';
 
 // Text
-$_['text_overview']                 = 'Overview';
-$_['text_statistics']               = 'Statistics';
-$_['text_latest_10_orders']         = 'Latest 10 Orders';
-$_['text_total_sale']               = 'Total Sales:';
-$_['text_total_sale_year']          = 'Total Sales This Year:';
-$_['text_total_order']              = 'Total Orders:';
-$_['text_total_customer']           = 'No. of Customers:';
-$_['text_total_customer_approval']  = 'Customers Awaiting Approval:';
-$_['text_total_review_approval']    = 'Reviews Awaiting Approval:';
-$_['text_total_affiliate']          = 'No. of Affiliates:';
-$_['text_total_affiliate_approval'] = 'Affiliates Awaiting Approval:';
-$_['text_day']                      = 'Today';
-$_['text_week']                     = 'This Week';
-$_['text_month']                    = 'This Month';
-$_['text_year']                     = 'This Year';
-$_['text_order']                    = 'Total Orders';
-$_['text_customer']                 = 'Total Customers';
+$_['text_overview']                 = 'Resumen General';
+$_['text_statistics']               = 'Estadísticas';
+$_['text_latest_10_orders']         = 'Ultimas 10 Ordenes';
+$_['text_total_sale']               = 'Total de Ventas:';
+$_['text_total_sale_year']          = 'Total de Ventas este Año:';
+$_['text_total_order']              = 'Total de Ordenes:';
+$_['text_total_customer']           = 'No. de Clientes:';
+$_['text_total_customer_approval']  = 'Clientes esperando Aprobación:';
+$_['text_total_review_approval']    = 'Comentarios esperando Aprobación:';
+$_['text_total_affiliate']          = 'No. de Afiliados:';
+$_['text_total_affiliate_approval'] = 'Afiliados esperando Aprobación:';
+$_['text_day']                      = 'Hoy';
+$_['text_week']                     = 'Esta Semana';
+$_['text_month']                    = 'Este Mes';
+$_['text_year']                     = 'Este Año';
+$_['text_order']                    = 'Total Ordenes';
+$_['text_customer']                 = 'Total Clientes';
 
-// Column 
-$_['column_order']                  = 'Order ID';
-$_['column_customer']               = 'Customer';
-$_['column_status']                 = 'Status';
-$_['column_date_added']             = 'Date Added';
+// Column
+$_['column_order']                  = 'ID Orden';
+$_['column_customer']               = 'Cliente';
+$_['column_status']                 = 'Estado';
+$_['column_date_added']             = 'Fecha Adicionada';
 $_['column_total']                  = 'Total';
-$_['column_firstname']              = 'First Name';
-$_['column_lastname']               = 'Last Name';
-$_['column_action']                 = 'Action';
+$_['column_firstname']              = 'Nombre';
+$_['column_lastname']               = 'Apellidos';
+$_['column_action']                 = 'Acción';
 
 // Entry
-$_['entry_range']                   = 'Select Range:';
+$_['entry_range']                   = 'Seleccionar Rango:';
 
 // Error
-$_['error_install']                 = 'Warning: Install folder still exists and should be deleted for security reasons!';
-$_['error_image']                   = 'Warning: Image directory %s not writeable!';
-$_['error_image_cache']             = 'Warning: Image cache directory %s not writeable!';
-$_['error_cache']                   = 'Warning: Cache directory %s not writeable!';
-$_['error_download']                = 'Warning: Download directory %s not writeable!';
-$_['error_logs']                    = 'Warning: Log directory %s not writeable!';
+$_['error_install']                 = 'Advertencia: Renombre o Borre el Directorio de Instalación por Razones de Seguridad!';
+$_['error_image']                   = 'Advertencia: El directorio de imagenes %s no es escribible!';
+$_['error_image_cache']             = 'Advertencia: El directorio de caché de imagenes %s no es escribible!';
+$_['error_cache']                   = 'Advertencia: El directorio de caché %s no es escribible!';
+$_['error_download']                = 'Advertencia: El directorio de descargas %s no es escribible!';
+$_['error_logs']                    = 'Advertencia: El directorio de log %s no es escribible!';
 ?>

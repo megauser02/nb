@@ -1,15 +1,15 @@
 <?php
 // Heading
-$_['heading_title']    = 'Modules';
+$_['heading_title']    = 'Módulos';
 
 // Text
-$_['text_install']     = 'Install';
-$_['text_uninstall']   = 'Uninstall';
+$_['text_install']     = 'Instalar';
+$_['text_uninstall']   = 'Desinstalar';
 
 // Column
-$_['column_name']      = 'Module Name';
-$_['column_action']    = 'Action';
+$_['column_name']      = 'Nombre del Módulo';
+$_['column_action']    = 'Acción';
 
 // Error
-$_['error_permission'] = 'Warning: You do not have permission to modify modules!';
+$_['error_permission'] = 'Advertencia: No tiene permiso para modificar módulos!';
 ?>

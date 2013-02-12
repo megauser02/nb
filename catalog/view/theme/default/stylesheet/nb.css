@@ -1196,17 +1196,10 @@ a.button, input.button {
 	cursor: pointer;
 	color: #FFFFFF;
 	line-height: 12px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: century gothic,sans-serif;
 	font-size: 12px;
-	font-weight: bold;
-	background: url('../image/button.png') repeat-x;
-	-webkit-border-radius: 7px 7px 7px 7px;
-	-moz-border-radius: 7px 7px 7px 7px;
-	-khtml-border-radius: 7px 7px 7px 7px;
-	border-radius: 7px 7px 7px 7px;
-	-webkit-box-shadow: 0px 2px 2px #DDDDDD;
-	-moz-box-shadow: 0px 2px 2px #DDDDDD;
-	box-shadow: 0px 2px 2px #DDDDDD;
+	font-weight: lighter;
+	background: #a3b805;
 }
 a.button {
 	display: inline-block;
@@ -1648,21 +1641,25 @@ ul.box-filter > li ul {
 }
 /* Product */
 .product-info {
-	overflow: auto;
+	overflow: hidden;
 	margin-bottom: 20px;
+        border: solid 1px red;
+        clear: both;
 }
 .product-info > .left {
 	float: left;
 	margin-right: 15px;
+        border: solid 1px red;
+        width: 450px;
 }
 .product-info > .left + .right {
-	margin-left: 265px;
+        float: right;
+        border: solid 1px red;
+        width: 500px;
 }
 .product-info .image {
-	border: 1px solid #E7E7E7;
 	float: left;
 	margin-bottom: 20px;
-	padding: 10px;
 	text-align: center;
 }
 .product-info .image-additional {
@@ -1681,9 +1678,7 @@ ul.box-filter > li ul {
 	margin-bottom: 10px;
 }
 .product-info .description {
-	border-top: 1px solid #E7E7E7;
-	border-bottom: 1px solid #E7E7E7;
-	padding: 5px 5px 10px 5px;
+	border: 1px solid red;
 	margin-bottom: 10px;
 	line-height: 20px;
 	color: #4D4D4D;
@@ -1698,7 +1693,7 @@ ul.box-filter > li ul {
 .product-info .price {
 	overflow: auto;
 	border-bottom: 1px solid #E7E7E7;
-	padding: 0px 5px 10px 5px;
+	padding: 0px;
 	margin-bottom: 10px;
 	font-size: 15px;
 	font-weight: bold;
@@ -1746,9 +1741,7 @@ ul.box-filter > li ul {
 	cursor: pointer;
 }
 .product-info .cart {
-	border-bottom: 1px solid #E7E7E7;
-	padding: 0px 5px 10px 5px;
-	margin-bottom: 20px;
+	border: 1px solid red;
 	color: #4D4D4D;
 }
 .product-info .cart div > span {
@@ -2317,4 +2310,10 @@ ul.box-filter > li ul {
         height: 24px;
 }
 .banner-rotator img {
+}
+.title-product-detail {
+        text-align: left; 
+        color: #776db0; 
+        float: right;
+        width: 500px;
 }
