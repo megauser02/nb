@@ -84,3 +84,4 @@
 2013-02-08 22:38:51 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' type_menu_image = 'data/logo.png'' at line 1<br />Error No: 1064<br />UPDATE oc_category SET parent_id = '0', `top` = '1', `column` = '1', sort_order = '5', status = '1', date_modified = NOW() WHERE category_id = '24', type_menu_image = 'data/logo.png' in C:\wamp\www\nb\system\database\mysql.php on line 50
 2013-02-08 22:39:15 - PHP Notice:  Undefined variable: no_type_menu_image in C:\wamp\www\nb\admin\view\template\catalog\category_form.tpl on line 117
 2013-02-08 22:39:26 - PHP Notice:  Undefined variable: no_type_menu_image in C:\wamp\www\nb\admin\view\template\catalog\category_form.tpl on line 117
+2013-02-11 23:31:02 - PHP Notice:  Undefined variable: no_type_menu_image in C:\wamp\www\nb\admin\view\template\catalog\category_form.tpl on line 117
