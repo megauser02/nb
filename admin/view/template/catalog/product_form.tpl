@@ -14,7 +14,7 @@
       <div class="buttons"><a onclick="$('#form').submit();" class="button"><?php echo $button_save; ?></a><a href="<?php echo $cancel; ?>" class="button"><?php echo $button_cancel; ?></a></div>
     </div>
     <div class="content">
-      <div id="tabs" class="htabs"><a href="#tab-general"><?php echo $tab_general; ?></a><a href="#tab-data"><?php echo $tab_data; ?></a><a href="#tab-links"><?php echo $tab_links; ?></a><a href="#tab-attribute"><?php echo $tab_attribute; ?></a><a href="#tab-option"><?php echo $tab_option; ?></a><a href="#tab-discount"><?php echo $tab_discount; ?></a><a href="#tab-special"><?php echo $tab_special; ?></a><a href="#tab-image"><?php echo $tab_image; ?></a><a href="#tab-reward"><?php echo $tab_reward; ?></a><a href="#tab-design"><?php echo $tab_design; ?></a></div>
+      <div id="tabs" class="htabs"><a href="#tab-general"><?php echo $tab_general; ?></a><a href="#tab-data"><?php echo $tab_data; ?></a><a href="#tab-links"><?php echo $tab_links; ?></a><!--<a href="#tab-attribute"><?php echo $tab_attribute; ?></a>--><!--<a href="#tab-option"><?php echo $tab_option; ?></a>--><!--<a href="#tab-discount"><?php echo $tab_discount; ?></a>--><a href="#tab-special"><?php echo $tab_special; ?></a><a href="#tab-image"><?php echo $tab_image; ?></a><!--<a href="#tab-reward"><?php echo $tab_reward; ?></a>--><!--<a href="#tab-design"><?php echo $tab_design; ?></a>--></div>
       <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="form">
         <div id="tab-general">
           <div id="languages" class="htabs">
@@ -61,7 +61,7 @@
                 <span class="error"><?php echo $error_model; ?></span>
                 <?php } ?></td>
             </tr>
-            <tr>
+            <tr class="hide-me">
               <td><?php echo $entry_sku; ?></td>
               <td><input type="text" name="sku" value="<?php echo $sku; ?>" /></td>
             </tr>
@@ -73,19 +73,19 @@
               <td><?php echo $entry_ean; ?></td>
               <td><input type="text" name="ean" value="<?php echo $ean; ?>" /></td>
             </tr>
-            <tr>
+            <tr class="hide-me">
               <td><?php echo $entry_jan; ?></td>
               <td><input type="text" name="jan" value="<?php echo $jan; ?>" /></td>
             </tr>
-            <tr>
+            <tr class="hide-me">
               <td><?php echo $entry_isbn; ?></td>
               <td><input type="text" name="isbn" value="<?php echo $isbn; ?>" /></td>
             </tr>
-            <tr>
+            <tr class="hide-me">
               <td><?php echo $entry_mpn; ?></td>
               <td><input type="text" name="mpn" value="<?php echo $mpn; ?>" /></td>
             </tr>
-            <tr>
+            <tr class="hide-me">
               <td><?php echo $entry_location; ?></td>
               <td><input type="text" name="location" value="<?php echo $location; ?>" /></td>
             </tr>
@@ -93,7 +93,7 @@
               <td><?php echo $entry_price; ?></td>
               <td><input type="text" name="price" value="<?php echo $price; ?>" /></td>
             </tr>
-            <tr>
+            <tr class="hide-me">
               <td><?php echo $entry_tax_class; ?></td>
               <td><select name="tax_class_id">
                   <option value="0"><?php echo $text_none; ?></option>
@@ -126,31 +126,20 @@
                   <?php } ?>
                 </select></td>
             </tr>
-            <tr>
+            
+            <tr class="hide-me">
               <td><?php echo $entry_stock_status; ?></td>
               <td><select name="stock_status_id">
-                  <?php foreach ($stock_statuses as $stock_status) { ?>
-                  <?php if ($stock_status['stock_status_id'] == $stock_status_id) { ?>
-                  <option value="<?php echo $stock_status['stock_status_id']; ?>" selected="selected"><?php echo $stock_status['name']; ?></option>
-                  <?php } else { ?>
-                  <option value="<?php echo $stock_status['stock_status_id']; ?>"><?php echo $stock_status['name']; ?></option>
-                  <?php } ?>
-                  <?php } ?>
+                    <option value="7">In Stock</option>
                 </select></td>
             </tr>
-            <tr>
+            
+            <tr class="hide-me">
               <td><?php echo $entry_shipping; ?></td>
-              <td><?php if ($shipping) { ?>
-                <input type="radio" name="shipping" value="1" checked="checked" />
-                <?php echo $text_yes; ?>
-                <input type="radio" name="shipping" value="0" />
-                <?php echo $text_no; ?>
-                <?php } else { ?>
-                <input type="radio" name="shipping" value="1" />
-                <?php echo $text_yes; ?>
-                <input type="radio" name="shipping" value="0" checked="checked" />
-                <?php echo $text_no; ?>
-                <?php } ?></td>
+              <td>
+                 <input type="radio" name="shipping" value="1" checked="checked" />
+                 <input type="radio" name="shipping" value="0" />
+              </td>
             </tr>
             <tr>
               <td><?php echo $entry_keyword; ?></td>
@@ -166,13 +155,15 @@
               <td><?php echo $entry_date_available; ?></td>
               <td><input type="text" name="date_available" value="<?php echo $date_available; ?>" size="12" class="date" /></td>
             </tr>
-            <tr>
+            
+            <tr class="hide-me">
               <td><?php echo $entry_dimension; ?></td>
               <td><input type="text" name="length" value="<?php echo $length; ?>" size="4" />
                 <input type="text" name="width" value="<?php echo $width; ?>" size="4" />
                 <input type="text" name="height" value="<?php echo $height; ?>" size="4" /></td>
             </tr>
-            <tr>
+            
+            <tr class="hide-me">
               <td><?php echo $entry_length; ?></td>
               <td><select name="length_class_id">
                   <?php foreach ($length_classes as $length_class) { ?>
@@ -184,11 +175,13 @@
                   <?php } ?>
                 </select></td>
             </tr>
-            <tr>
+            
+            <tr class="hide-me">
               <td><?php echo $entry_weight; ?></td>
               <td><input type="text" name="weight" value="<?php echo $weight; ?>" /></td>
             </tr>
-            <tr>
+            
+            <tr class="hide-me">
               <td><?php echo $entry_weight_class; ?></td>
               <td><select name="weight_class_id">
                   <?php foreach ($weight_classes as $weight_class) { ?>
@@ -200,6 +193,7 @@
                   <?php } ?>
                 </select></td>
             </tr>
+            
             <tr>
               <td><?php echo $entry_status; ?></td>
               <td><select name="status">
@@ -240,13 +234,14 @@
                   <?php } ?>
                 </div></td>
             </tr> 
-            <tr>
+            <tr class="hide-me">
               <td><?php echo $entry_filter; ?></td>
               <td><input type="text" name="filter" value="" /></td>
             </tr>
-            <tr>
+            
+            <tr class="hide-me">
               <td>&nbsp;</td>
-              <td><div id="product-filter" class="scrollbox">
+              <td>fw<div id="product-filter" class="scrollbox">
                   <?php $class = 'odd'; ?>
                   <?php foreach ($product_filters as $product_filter) { ?>
                   <?php $class = ($class == 'even' ? 'odd' : 'even'); ?>
@@ -255,8 +250,9 @@
                   </div>
                   <?php } ?>
                 </div></td>
-            </tr>                       
-            <tr>
+            </tr>             
+            
+            <tr class="hide-me">
               <td><?php echo $entry_store; ?></td>
               <td><div class="scrollbox">
                   <?php $class = 'even'; ?>
@@ -283,11 +279,12 @@
                   <?php } ?>
                 </div></td>
             </tr>
-            <tr>
+            
+            <tr class="hide-me">
               <td><?php echo $entry_download; ?></td>
               <td><input type="text" name="download" value="" /></td>
             </tr>			
-            <tr>
+            <tr class="hide-me">
               <td>&nbsp;</td>
               <td><div id="product-download" class="scrollbox">
                   <?php $class = 'odd'; ?>
@@ -299,11 +296,12 @@
                   <?php } ?>
                 </div></td>
             </tr>
-            <tr>
+            
+            <tr class="hide-me">
               <td><?php echo $entry_related; ?></td>
               <td><input type="text" name="related" value="" /></td>
             </tr>
-            <tr>
+            <tr class="hide-me">
               <td>&nbsp;</td>
               <td><div id="product-related" class="scrollbox">
                   <?php $class = 'odd'; ?>
@@ -317,7 +315,7 @@
             </tr>
           </table>
         </div>
-        <div id="tab-attribute">
+        <div id="tab-attribute" style=" display: none;">
           <table id="attribute" class="list">
             <thead>
               <tr>
@@ -349,7 +347,8 @@
             </tfoot>
           </table>
         </div>
-        <div id="tab-option">
+          
+        <div id="tab-option" style=" display: none;">
           <div id="vtab-option" class="vtabs">
             <?php $option_row = 0; ?>
             <?php foreach ($product_options as $product_option) { ?>
@@ -518,7 +517,8 @@
           <?php $option_row++; ?>
           <?php } ?>
         </div>
-        <div id="tab-discount">
+          
+        <div id="tab-discount" style=" display: none;">
           <table id="discount" class="list">
             <thead>
               <tr>
@@ -562,6 +562,7 @@
             </tfoot>
           </table>
         </div>
+          
         <div id="tab-special">
           <table id="special" class="list">
             <thead>
@@ -635,7 +636,8 @@
             </tfoot>
           </table>
         </div>
-        <div id="tab-reward">
+          
+        <div id="tab-reward" style=" display: none;">
           <table class="form">
             <tr>
               <td><?php echo $entry_points; ?></td>
@@ -659,7 +661,8 @@
             <?php } ?>
           </table>
         </div>
-        <div id="tab-design">
+          
+        <div id="tab-design" style="display: none;">
           <table class="list">
             <thead>
               <tr>

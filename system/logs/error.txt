@@ -85,3 +85,36 @@
 2013-02-08 22:39:15 - PHP Notice:  Undefined variable: no_type_menu_image in C:\wamp\www\nb\admin\view\template\catalog\category_form.tpl on line 117
 2013-02-08 22:39:26 - PHP Notice:  Undefined variable: no_type_menu_image in C:\wamp\www\nb\admin\view\template\catalog\category_form.tpl on line 117
 2013-02-11 23:31:02 - PHP Notice:  Undefined variable: no_type_menu_image in C:\wamp\www\nb\admin\view\template\catalog\category_form.tpl on line 117
+2013-02-12 18:04:58 - PHP Notice:  Undefined variable: no_type_menu_image in C:\wamp\www\nb\admin\view\template\catalog\category_form.tpl on line 117
+2013-02-12 18:07:50 - PHP Notice:  Undefined variable: no_type_menu_image in C:\wamp\www\nb\admin\view\template\catalog\category_form.tpl on line 117
+2013-02-12 18:07:50 - PHP Notice:  Undefined variable: no_type_menu_image in C:\wamp\www\nb\admin\view\template\catalog\category_form.tpl on line 117
+2013-02-12 18:08:44 - PHP Notice:  Undefined variable: no_type_menu_image in C:\wamp\www\nb\admin\view\template\catalog\category_form.tpl on line 117
+2013-02-12 18:10:43 - PHP Notice:  Undefined variable: no_type_menu_image in C:\wamp\www\nb\admin\view\template\catalog\category_form.tpl on line 117
+2013-02-12 18:11:25 - PHP Notice:  Undefined variable: no_type_menu_image in C:\wamp\www\nb\admin\view\template\catalog\category_form.tpl on line 117
+2013-02-12 20:45:26 - PHP Notice:  Undefined index: sort_order in C:\wamp\www\nb\admin\controller\design\banner.php on line 389
+2013-02-12 20:45:26 - PHP Notice:  Undefined index: sort_order in C:\wamp\www\nb\admin\controller\design\banner.php on line 389
+2013-02-12 20:45:26 - PHP Notice:  Undefined index: sort_order in C:\wamp\www\nb\admin\controller\design\banner.php on line 389
+2013-02-12 20:45:26 - PHP Notice:  Undefined index: sort_order in C:\wamp\www\nb\admin\controller\design\banner.php on line 389
+2013-02-12 20:45:26 - PHP Notice:  Undefined index: sort_order in C:\wamp\www\nb\admin\controller\design\banner.php on line 389
+2013-02-12 20:45:26 - PHP Notice:  Undefined index: sort_order in C:\wamp\www\nb\admin\controller\design\banner.php on line 389
+2013-02-12 20:45:26 - PHP Notice:  Undefined index: sort_order in C:\wamp\www\nb\admin\controller\design\banner.php on line 389
+2013-02-12 20:45:26 - PHP Notice:  Undefined index: sort_order in C:\wamp\www\nb\admin\controller\design\banner.php on line 389
+2013-02-12 22:40:06 - PHP Notice:  Undefined index: sort_order in C:\wamp\www\nb\admin\model\design\banner.php on line 22
+2013-02-12 22:40:06 - PHP Notice:  Error: Unknown column 'sort_order' in 'field list'<br />Error No: 1054<br />UPDATE oc_banner SET name = 'Banner Home', status = '1', sort_order = '0' WHERE banner_id = '7' in C:\wamp\www\nb\system\database\mysql.php on line 50
+2013-02-12 22:41:03 - PHP Notice:  Undefined index: sort_order in C:\wamp\www\nb\admin\model\design\banner.php on line 25
+2013-02-12 22:41:03 - PHP Notice:  Error: Unknown column 'sort_order' in 'field list'<br />Error No: 1054<br />UPDATE oc_banner SET name = 'Banner Home', status = '1', sort_order = '0' WHERE banner_id = '7' in C:\wamp\www\nb\system\database\mysql.php on line 50
+2013-02-12 22:41:25 - PHP Notice:  Undefined index: sort_order in C:\wamp\www\nb\admin\model\design\banner.php on line 30
+2013-02-12 22:41:25 - PHP Notice:  Undefined index: sort_order in C:\wamp\www\nb\admin\model\design\banner.php on line 30
+2013-02-12 22:41:25 - PHP Notice:  Undefined index: sort_order in C:\wamp\www\nb\admin\model\design\banner.php on line 30
+2013-02-12 22:41:25 - PHP Notice:  Undefined index: sort_order in C:\wamp\www\nb\admin\model\design\banner.php on line 30
+2013-02-12 22:41:25 - PHP Notice:  Undefined index: sort_order in C:\wamp\www\nb\admin\model\design\banner.php on line 30
+2013-02-12 22:41:54 - PHP Notice:  Undefined index: sort_order in C:\wamp\www\nb\admin\model\design\banner.php on line 30
+2013-02-12 22:41:54 - PHP Notice:  Undefined index: sort_order in C:\wamp\www\nb\admin\model\design\banner.php on line 30
+2013-02-12 22:41:54 - PHP Notice:  Undefined index: sort_order in C:\wamp\www\nb\admin\model\design\banner.php on line 30
+2013-02-12 22:41:54 - PHP Notice:  Undefined index: sort_order in C:\wamp\www\nb\admin\model\design\banner.php on line 30
+2013-02-12 22:41:54 - PHP Notice:  Undefined index: sort_order in C:\wamp\www\nb\admin\model\design\banner.php on line 30
+2013-02-12 22:43:52 - PHP Notice:  Undefined index: sort_order in C:\wamp\www\nb\admin\model\design\banner.php on line 30
+2013-02-12 22:43:52 - PHP Notice:  Undefined index: sort_order in C:\wamp\www\nb\admin\model\design\banner.php on line 30
+2013-02-12 22:43:52 - PHP Notice:  Undefined index: sort_order in C:\wamp\www\nb\admin\model\design\banner.php on line 30
+2013-02-12 22:43:52 - PHP Notice:  Undefined index: sort_order in C:\wamp\www\nb\admin\model\design\banner.php on line 30
+2013-02-12 22:43:52 - PHP Notice:  Undefined index: sort_order in C:\wamp\www\nb\admin\model\design\banner.php on line 30

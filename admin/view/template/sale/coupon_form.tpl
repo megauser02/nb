@@ -15,9 +15,6 @@
     </div>
     <div class="content">
       <div id="tabs" class="htabs"><a href="#tab-general"><?php echo $tab_general; ?></a>
-        <?php if ($coupon_id) { ?>
-        <a href="#tab-history"><?php echo $tab_history; ?></a>
-        <?php } ?>
       </div>
       <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="form">
         <div id="tab-general">
@@ -73,7 +70,7 @@
                 <?php echo $text_no; ?>
                 <?php } ?></td>
             </tr>
-            <tr>
+            <tr class="hide-me">
               <td><?php echo $entry_shipping; ?></td>
               <td><?php if ($shipping) { ?>
                 <input type="radio" name="shipping" value="1" checked="checked" />
@@ -149,11 +146,6 @@
             </tr>
           </table>
         </div>
-        <?php if ($coupon_id) { ?>
-        <div id="tab-history">
-          <div id="history"></div>
-        </div>
-        <?php } ?>
       </form>
     </div>
   </div>
@@ -266,17 +258,6 @@ $('#coupon-category div img').live('click', function() {
 $('#date-start').datepicker({dateFormat: 'yy-mm-dd'});
 $('#date-end').datepicker({dateFormat: 'yy-mm-dd'});
 //--></script>
-<?php if ($coupon_id) { ?>
-<script type="text/javascript"><!--
-$('#history .pagination a').live('click', function() {
-	$('#history').load(this.href);
-	
-	return false;
-});			
-
-$('#history').load('index.php?route=sale/coupon/history&token=<?php echo $token; ?>&coupon_id=<?php echo $coupon_id; ?>');
-//--></script>
-<?php } ?>
 <script type="text/javascript"><!--
 $('#tabs a').tabs(); 
 //--></script> 

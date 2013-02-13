@@ -20,7 +20,7 @@ $_['entry_meta_keyword'] 	 = 'Etiquetas Meta:';
 $_['entry_meta_description'] = 'Descripción Etiquetas Meta:';
 $_['entry_description']      = 'Descripción:';
 $_['entry_parent']           = 'Categoría Superior:';
-$_['entry_filter']           = 'Filters:<br /><span class="help">(Autocomplete)</span>';
+$_['entry_filter']           = 'Filtro:<br /><span class="help">(Autocompletar)</span>';
 $_['entry_store']            = 'Tiendas:';
 $_['entry_keyword']          = 'Palabras claves SEO:<br /><span class="help">No use Espacios, reemplace espacios con - y este seguro de que las palabras claves sean Globalmente Únicas.</span>';
 $_['entry_image']            = 'Imagen:';

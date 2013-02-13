@@ -17,7 +17,7 @@
       <div class="buttons"><a onclick="$('#form').submit();" class="button"><?php echo $button_save; ?></a><a href="<?php echo $cancel; ?>" class="button"><?php echo $button_cancel; ?></a></div>
     </div>
     <div class="content">
-      <div id="tabs" class="htabs"><a href="#tab-general"><?php echo $tab_general; ?></a><a href="#tab-store"><?php echo $tab_store; ?></a><a href="#tab-local"><?php echo $tab_local; ?></a><a href="#tab-option"><?php echo $tab_option; ?></a><a href="#tab-image"><?php echo $tab_image; ?></a><a href="#tab-ftp"><?php echo $tab_ftp; ?></a><a href="#tab-mail"><?php echo $tab_mail; ?></a><a href="#tab-fraud"><?php echo $tab_fraud; ?></a><a href="#tab-server"><?php echo $tab_server; ?></a></div>
+      <div id="tabs" class="htabs"><a href="#tab-general"><?php echo $tab_general; ?></a><a href="#tab-store"><?php echo $tab_store; ?></a><a href="#tab-local"><?php echo $tab_local; ?></a><!--<a href="#tab-option"><?php echo $tab_option; ?></a>--><a href="#tab-image"><?php echo $tab_image; ?></a><!--<a href="#tab-ftp"><?php echo $tab_ftp; ?></a>--><!--<a href="#tab-mail"><?php echo $tab_mail; ?></a>--><!--<a href="#tab-fraud"><?php echo $tab_fraud; ?></a>--><!--<a href="#tab-server"><?php echo $tab_server; ?></a>--></div>
       <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="form">
         <div id="tab-general">
           <table class="form">
@@ -75,7 +75,7 @@
               <td><?php echo $entry_meta_description; ?></td>
               <td><textarea name="config_meta_description" cols="40" rows="5"><?php echo $config_meta_description; ?></textarea></td>
             </tr>
-            <tr>
+            <tr class="hide-me">
               <td><?php echo $entry_template; ?></td>
               <td><select name="config_template" onchange="$('#template').load('index.php?route=setting/setting/template&token=<?php echo $token; ?>&template=' + encodeURIComponent(this.value));">
                   <?php foreach ($templates as $template) { ?>
@@ -89,7 +89,7 @@
             </tr>
             <tr>
               <td></td>
-              <td id="template"></td>
+              <td id="template" class="hide-me"></td>
             </tr>
             <tr>
               <td><?php echo $entry_layout; ?></td>
@@ -174,7 +174,7 @@
                 <?php echo $text_no; ?>
                 <?php } ?></td>
             </tr>
-            <tr>
+            <tr class="hide-me">
               <td><?php echo $entry_length_class; ?></td>
               <td><select name="config_length_class_id">
                   <?php foreach ($length_classes as $length_class) { ?>
@@ -186,7 +186,7 @@
                   <?php } ?>
                 </select></td>
             </tr>
-            <tr>
+            <tr class="hide-me">
               <td><?php echo $entry_weight_class; ?></td>
               <td><select name="config_weight_class_id">
                   <?php foreach ($weight_classes as $weight_class) { ?>
@@ -200,7 +200,7 @@
             </tr>
           </table>
         </div>
-        <div id="tab-option">
+          <div id="tab-option" class="hide-me">
           <h2><?php echo $text_items; ?></h2>
           <table class="form">
             <tr>
@@ -701,7 +701,7 @@
             </tr>
           </table>
         </div>
-        <div id="tab-ftp">
+        <div id="tab-ftp" class="hide-me">
           <table class="form">
             <tr>
               <td><?php echo $entry_ftp_host; ?></td>
@@ -751,7 +751,7 @@
             </tr>
           </table>
         </div>
-        <div id="tab-mail">
+        <div id="tab-mail" class=" hide-me">
           <table class="form">
             <tr>
               <td><?php echo $entry_mail_protocol; ?></td>
@@ -826,7 +826,7 @@
             </tr>
           </table>
         </div>
-        <div id="tab-fraud">
+        <div id="tab-fraud" class="hide-me">
           <table class="form">
             <tr>
               <td><?php echo $entry_fraud_detection; ?></td>
@@ -864,7 +864,7 @@
             </tr>
           </table>
         </div>
-        <div id="tab-server">
+        <div id="tab-server" class="hide-me">
           <table class="form">
             <tr>
               <td><?php echo $entry_secure; ?></td>
