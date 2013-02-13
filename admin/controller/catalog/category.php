@@ -394,6 +394,7 @@ class ControllerCatalogCategory extends Controller {
                 
                 
 		$this->data['no_image'] = $this->model_tool_image->resize('no_image.jpg', 100, 100);
+                $this->data['no_type_menu_image'] = $this->model_tool_image->resize('no_image.jpg', 100, 100);
 		
 		if (isset($this->request->post['top'])) {
 			$this->data['top'] = $this->request->post['top'];

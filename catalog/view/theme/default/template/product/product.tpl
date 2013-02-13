@@ -1,11 +1,16 @@
 <?php echo $header; ?><?php echo $column_left; ?><?php echo $column_right; ?>
+<style>
+.color-title {
+    color: #<?php echo $color; ?>;
+}
+</style>
 <div id="content"><?php echo $content_top; ?>
   <div class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
     <?php } ?>
   </div>
-  <h1 class="title-product-detail" ><?php echo $heading_title; ?></h1>
+  <h1 class="title-product-detail color-title" ><?php echo $heading_title; ?></h1>
   <div class="product-info">
       
     <?php if ($thumb || $images) { ?>
@@ -27,7 +32,7 @@
         
       <div class="cart" style=" border: solid 1px red;width: 100%;overflow: hidden;">
           
-        <div style="border: solid 1px red;float: left;">
+       <div style="border: solid 1px red;float: left;" class="color-title">
             <div>dasdadasd</div>
             <div><b>dasdadasd</b></div>
         </div>
@@ -73,17 +78,29 @@
       </div>
       <?php } ?>
       
-      <div style=" border: solid 1px red;">dasd5asd5sa4</div>           
-      <div style=" border: solid 1px red;">dasd5asd5sa4</div>           
-      <div style=" border: solid 1px red;">dasd5asd5sa4</div>           
-      <div style=" border: solid 1px red;">dasd5asd5sa4</div>           
-      <div style=" border: solid 1px red;">dasd5asd5sa4</div>           
-      
+      <div style=" border: solid 1px red;">
+          <h2 class="color-title">Aroma</h2>
+          dasd5asd5sa4
+      </div>           
+      <div style=" border: solid 1px red;">
+          <h2 class="color-title">Sensaci&oacute;n</h2>
+          dasd5asd5sa4
+      </div>           
+      <div style=" border: solid 1px red;">
+          <h2 class="color-title">Beneficios</h2>
+          dasd5asd5sa4
+      </div>           
     </div>
     
     <div style="border: solid 2px green;clear: both;overflow: hidden;padding-top: 73px;">
-        <div style=" float: left; border: solid 1px #00FFFF;width: 48%;">4545878</div>
-        <div style=" float: left; border: solid 1px #00FFFF;width: 48%;">8787778</div>
+        <div style=" float: left; border: solid 1px #00FFFF;width: 48%;">
+            <h2 class="color-title">Algunos ingredientes</h2>
+            4545878
+        </div>
+        <div style=" float: left; border: solid 1px #00FFFF;width: 48%;">
+            <h2 class="color-title">Modo de uso</h2>
+            8787778
+        </div>
     </div>
     
   </div>

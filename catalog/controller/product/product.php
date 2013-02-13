@@ -164,7 +164,18 @@ class ControllerProductProduct extends Controller {
 		
 		$product_info = $this->model_catalog_product->getProduct($product_id);
 		
+                $this->data['color'] = '000'; 
+                
 		if ($product_info) {
+                    
+                        if( isset($category_id) )
+                        {
+                            $this->data['color'] = $this->model_catalog_category->getCategoryColor( $category_id );    
+                        }
+                        else {
+                            $this->data['color'] = $this->model_catalog_category->getCatColorbyProduct( $product_id );
+                        }
+                        
 			$url = '';
 			
 			if (isset($this->request->get['path'])) {

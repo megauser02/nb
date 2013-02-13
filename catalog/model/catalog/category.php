@@ -67,5 +67,26 @@ class ModelCatalogCategory extends Model {
 		
 		return $query->row['total'];
 	}
+        
+        public function getCatColorbyProduct( $product_id = null )
+        {
+		$query = $this->db->query("select tb1.color
+                                             from " . DB_PREFIX . "category as tb1 
+                                             left join " . DB_PREFIX . "product_to_category as tb2 on tb2.category_id = tb1.category_id 
+                                             where tb2.product_id = '" . (int)$product_id . "' and tb1.parent_id > 0 order by tb1.category_id desc"
+                                          );
+		return $query->row['color'];
+        }                
+        public function getCategoryColor( $category_id = NULL )
+        {
+		$query = $this->db->query("select color from " . DB_PREFIX . "category where category_id = '" . (int)$category_id . "'" );
+		
+		if ($query->num_rows) {
+			return $query->row['color'];
+		} else {
+			return false;
+		}
+        }        
+        
 }
 ?>
