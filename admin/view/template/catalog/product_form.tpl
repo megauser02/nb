@@ -14,7 +14,20 @@
       <div class="buttons"><a onclick="$('#form').submit();" class="button"><?php echo $button_save; ?></a><a href="<?php echo $cancel; ?>" class="button"><?php echo $button_cancel; ?></a></div>
     </div>
     <div class="content">
-      <div id="tabs" class="htabs"><a href="#tab-general"><?php echo $tab_general; ?></a><a href="#tab-data"><?php echo $tab_data; ?></a><a href="#tab-links"><?php echo $tab_links; ?></a><!--<a href="#tab-attribute"><?php echo $tab_attribute; ?></a>--><!--<a href="#tab-option"><?php echo $tab_option; ?></a>--><!--<a href="#tab-discount"><?php echo $tab_discount; ?></a>--><a href="#tab-special"><?php echo $tab_special; ?></a><a href="#tab-image"><?php echo $tab_image; ?></a><!--<a href="#tab-reward"><?php echo $tab_reward; ?></a>--><!--<a href="#tab-design"><?php echo $tab_design; ?></a>--></div>
+      <div id="tabs" class="htabs">
+          <a href="#tab-general"><?php echo $tab_general; ?></a>
+          <a href="#tab-data"><?php echo $tab_data; ?></a>
+          <a href="#tab-character">Caracter&iacute;sticas</a>
+          <a href="#tab-links"><?php echo $tab_links; ?></a>
+          <!--<a href="#tab-attribute"><?php echo $tab_attribute; ?></a>-->
+          <!--<a href="#tab-option"><?php echo $tab_option; ?></a>-->
+          <!--<a href="#tab-discount"><?php echo $tab_discount; ?></a>-->
+          <a href="#tab-special"><?php echo $tab_special; ?></a>
+          <a href="#tab-image"><?php echo $tab_image; ?></a>
+          <!--<a href="#tab-reward"><?php echo $tab_reward; ?></a>-->
+          <!--<a href="#tab-design"><?php echo $tab_design; ?></a>-->
+          
+      </div>
       <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="form">
         <div id="tab-general">
           <div id="languages" class="htabs">
@@ -64,14 +77,6 @@
             <tr class="hide-me">
               <td><?php echo $entry_sku; ?></td>
               <td><input type="text" name="sku" value="<?php echo $sku; ?>" /></td>
-            </tr>
-            <tr>
-              <td><?php echo $entry_upc; ?></td>
-              <td><input type="text" name="upc" value="<?php echo $upc; ?>" /></td>
-            </tr>
-            <tr>
-              <td><?php echo $entry_ean; ?></td>
-              <td><input type="text" name="ean" value="<?php echo $ean; ?>" /></td>
             </tr>
             <tr class="hide-me">
               <td><?php echo $entry_jan; ?></td>
@@ -212,6 +217,44 @@
             </tr>
           </table>
         </div>
+          
+        <div id="tab-character">
+          <table class="form">
+            <tr>
+              <td>Presentaci&oacute;n
+                  <span class="help">500mL, 10 gr, 1 pieza, etc.</span>
+              </td>
+              <td><input type="text" name="upc" value="<?php echo $upc; ?>" /></td>
+            </tr>
+            <tr>
+              <td>Subt&iacute;tulo
+                 <span class="help"></span>
+              </td>
+              <td><input type="text" name="ean" value="<?php echo $ean; ?>" size="100" /></td>
+            </tr>
+            <tr>
+                <td>Aroma</td>
+                <td><input type="text" name="odor" value="<?php echo $odor; ?>" size="100" /></td>
+            </tr>
+            <tr>
+                <td>Sensaci&oacute;n</td>
+                <td><input type="text" name="sensation" value="<?php echo $sensation; ?>" size="100" /></td>
+            </tr>
+            <tr>
+                <td>Beneficios</td>
+                <td><textarea name="benefits" id="benefits"><?php echo $benefits; ?></textarea></td>
+            </tr>
+            <tr>
+                <td>Algunos Ingredientes</td>
+                <td><textarea name="ingredients" id="ingredients"><?php echo $ingredients; ?></textarea></td>
+            </tr>
+            <tr>
+                <td>Modo de uso</td>
+                <td><textarea name="usage" id="usage"><?php echo $usage; ?></textarea></td>
+            </tr>
+         </table>
+        </div>          
+          
         <div id="tab-links">
           <table class="form">
             <tr>
@@ -719,6 +762,34 @@ CKEDITOR.replace('description<?php echo $language['language_id']; ?>', {
 	filebrowserImageUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
 	filebrowserFlashUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>'
 });
+
+CKEDITOR.replace('benefits', {
+	filebrowserBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserImageBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserFlashBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserImageUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserFlashUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>'
+});
+
+CKEDITOR.replace('ingredients', {
+	filebrowserBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserImageBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserFlashBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserImageUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserFlashUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>'
+});
+
+CKEDITOR.replace('usage', {
+	filebrowserBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserImageBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserFlashBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserImageUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserFlashUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>'
+});
+
 <?php } ?>
 //--></script> 
 <script type="text/javascript"><!--

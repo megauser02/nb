@@ -975,6 +975,46 @@ class ControllerCatalogProduct extends Controller {
       		$this->data['manufacturer_id'] = 0;
     	} 		
 		
+    	if (isset($this->request->post['odor'])) {
+      		$this->data['odor'] = $this->request->post['odor'];
+		} elseif (!empty($product_info)) {
+			$this->data['odor'] = $product_info['odor'];
+		} else {
+      		$this->data['odor'] = 0;
+    	} 		
+        
+    	if (isset($this->request->post['sensation'])) {
+      		$this->data['sensation'] = $this->request->post['sensation'];
+		} elseif (!empty($product_info)) {
+			$this->data['sensation'] = $product_info['sensation'];
+		} else {
+      		$this->data['sensation'] = 0;
+    	} 		
+        
+    	if (isset($this->request->post['benefits'])) {
+      		$this->data['benefits'] = $this->request->post['benefits'];
+		} elseif (!empty($product_info)) {
+			$this->data['benefits'] = $product_info['benefits'];
+		} else {
+      		$this->data['benefits'] = 0;
+    	} 		
+        
+    	if (isset($this->request->post['ingredients'])) {
+      		$this->data['ingredients'] = $this->request->post['ingredients'];
+		} elseif (!empty($product_info)) {
+			$this->data['ingredients'] = $product_info['ingredients'];
+		} else {
+      		$this->data['ingredients'] = 0;
+    	} 		
+        
+    	if (isset($this->request->post['usage'])) {
+      		$this->data['usage'] = $this->request->post['usage'];
+		} elseif (!empty($product_info)) {
+			$this->data['usage'] = $product_info['usage'];
+		} else {
+      		$this->data['usage'] = 0;
+    	} 		
+        
     	if (isset($this->request->post['manufacturer'])) {
       		$this->data['manufacturer'] = $this->request->post['manufacturer'];
 		} elseif (!empty($product_info)) {
