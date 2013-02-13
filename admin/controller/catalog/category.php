@@ -208,6 +208,10 @@ class ControllerCatalogCategory extends Controller {
 	}
 
 	protected function getForm() {
+            
+                $this->document->addScript('view/javascript/jquery/colorpicker/js/colorpicker.js');
+                $this->document->addStyle('view/javascript/jquery/colorpicker/css/colorpicker.css');
+            
 		$this->data['heading_title'] = $this->language->get('heading_title');
 
 		$this->data['text_none'] = $this->language->get('text_none');
@@ -431,6 +435,14 @@ class ControllerCatalogCategory extends Controller {
 			$this->data['category_layout'] = array();
 		}
 
+		if (isset($this->request->post['color'])) {
+			$this->data['color'] = $this->request->post['color'];
+		} elseif (!empty($category_info)) {
+			$this->data['color'] = $category_info['color'];
+		} else {
+			$this->data['color'] = 1;
+		}
+                
 		$this->load->model('design/layout');
 		
 		$this->data['layouts'] = $this->model_design_layout->getLayouts();

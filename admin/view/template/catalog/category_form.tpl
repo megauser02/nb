@@ -1,4 +1,5 @@
 <?php echo $header; ?>
+
 <div id="content">
   <div class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
@@ -43,6 +44,15 @@
               <tr>
                 <td><?php echo $entry_description; ?></td>
                 <td><textarea name="category_description[<?php echo $language['language_id']; ?>][description]" id="description<?php echo $language['language_id']; ?>"><?php echo isset($category_description[$language['language_id']]) ? $category_description[$language['language_id']]['description'] : ''; ?></textarea></td>
+              </tr>
+              <tr>
+                <td>Color
+                    <span class="help">Seleccione el c&iacute;rculo y arrastre el cursor al color deseado.</span>
+                </td>
+                <td>
+                    <p id="colorpickerHolder"></p>
+                    <input type="hidden" name="color" value="<?php echo $color; ?>" id="colorSelector" />
+                </td>
               </tr>
             </table>
           </div>
@@ -206,6 +216,17 @@ CKEDITOR.replace('description<?php echo $language['language_id']; ?>', {
 <?php } ?>
 //--></script> 
 <script type="text/javascript"><!--
+
+$('#colorpickerHolder').ColorPicker({
+    <?php if( $color ) { ?>
+    color: '#<?php echo $color; ?>',
+    <?php } ?>
+    flat: true,
+    onChange: function (hsb, hex, rgb) {
+	$('#colorSelector').attr('value', hex );
+    }    
+});
+
 $('input[name=\'path\']').autocomplete({
 	delay: 500,
 	source: function(request, response) {		
