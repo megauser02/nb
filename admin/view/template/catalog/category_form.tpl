@@ -61,7 +61,7 @@
                 </td>
               </tr>
             <tr>
-                <td>Banner principal</td>
+              <td>Banner principal <span class="help">Tama&ntilde;o recomendado.</span></td>
               <td valign="top"><div class="image"><img src="<?php echo $thumb_first_banner; ?>" alt="" id="thumb_first_banner" />
                   <input type="hidden" name="first_banner" value="<?php echo $first_banner; ?>" id="image_first_banner" />
                   <br />
@@ -73,7 +73,7 @@
                 <td><textarea name="benefits" id="benefits"><?php echo $benefits; ?></textarea></td>
             </tr>    
             <tr>
-                <td>Banner secundario</td>
+                <td>Banner secundario<span class="help">Tama&ntilde;o recomendado.</span></td>
                 <td valign="top"><div class="image"><img src="<?php echo $thumb_second_banner; ?>" alt="" id="thumb_second_banner" />
                     <input type="hidden" name="second_banner" value="<?php echo $second_banner; ?>" id="image_second_banner" />
                     <br />
@@ -149,7 +149,7 @@
               <td><?php echo $entry_keyword; ?></td>
               <td><input type="text" name="keyword" value="<?php echo $keyword; ?>" /></td>
             </tr>
-            <tr>
+            <tr class="hide-me">
               <td><?php echo $entry_image; ?></td>
               <td valign="top"><div class="image"><img src="<?php echo $thumb; ?>" alt="" id="thumb" />
                   <input type="hidden" name="image" value="<?php echo $image; ?>" id="image" />
