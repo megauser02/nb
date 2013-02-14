@@ -14,7 +14,7 @@
       <div class="buttons"><a onclick="$('#form').submit();" class="button"><?php echo $button_save; ?></a><a href="<?php echo $cancel; ?>" class="button"><?php echo $button_cancel; ?></a></div>
     </div>
     <div class="content">
-      <div id="tabs" class="htabs"><a href="#tab-general"><?php echo $tab_general; ?></a><a href="#tab-data"><?php echo $tab_data; ?></a><!--<a href="#tab-design"><?php echo $tab_design; ?></a>--></div>
+      <div id="tabs" class="htabs"><a href="#tab-general"><?php echo $tab_general; ?></a><a href="#tab-charact">Caracter&iacute;sticas</a><a href="#tab-data"><?php echo $tab_data; ?></a><!--<a href="#tab-design"><?php echo $tab_design; ?></a>--></div>
       <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="form">
         <div id="tab-general">
           <div id="languages" class="htabs">
@@ -44,6 +44,13 @@
                 <td><?php echo $entry_description; ?></td>
                 <td><textarea name="category_description[<?php echo $language['language_id']; ?>][description]" id="description<?php echo $language['language_id']; ?>"><?php echo isset($category_description[$language['language_id']]) ? $category_description[$language['language_id']]['description'] : ''; ?></textarea></td>
               </tr>
+            </table>
+          </div>
+          <?php } ?>
+        </div>
+          
+        <div id="tab-charact">
+          <table class="form">
               <tr>
                 <td>Color
                     <span class="help">Seleccione el c&iacute;rculo y arrastre el cursor al color deseado.</span>
@@ -53,10 +60,41 @@
                     <input type="hidden" name="color" value="<?php echo $color; ?>" id="colorSelector" />
                 </td>
               </tr>
-            </table>
-          </div>
-          <?php } ?>
-        </div>
+            <tr>
+                <td>Banner principal</td>
+              <td valign="top"><div class="image"><img src="<?php echo $thumb_first_banner; ?>" alt="" id="thumb_first_banner" />
+                  <input type="hidden" name="first_banner" value="<?php echo $first_banner; ?>" id="image_first_banner" />
+                  <br />
+                  <a onclick="image_upload('image_first_banner', 'thumb_first_banner');"><?php echo $text_browse; ?></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a onclick="$('#thumb_first_banner').attr('src', '<?php echo $no_image; ?>'); $('#image_first_banner').attr('value', '');"><?php echo $text_clear; ?></a>
+              </td>                
+            </tr>    
+            <tr>
+                <td>Beneficios</td>
+                <td><textarea name="benefits" id="benefits"><?php echo $benefits; ?></textarea></td>
+            </tr>    
+            <tr>
+                <td>Banner secundario</td>
+                <td valign="top"><div class="image"><img src="<?php echo $thumb_second_banner; ?>" alt="" id="thumb_second_banner" />
+                    <input type="hidden" name="second_banner" value="<?php echo $second_banner; ?>" id="image_second_banner" />
+                    <br />
+                    <a onclick="image_upload('image_second_banner', 'thumb_second_banner');"><?php echo $text_browse; ?></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a onclick="$('#thumb_second_banner').attr('src', '<?php echo $no_image; ?>'); $('#image_second_banner').attr('value', '');"><?php echo $text_clear; ?></a>
+                </td>                
+            </tr>    
+            <tr>
+                <td>Ingredientes</td>
+                <td><textarea name="ingredients" id="ingredients"><?php echo $ingredients; ?></textarea></td>
+            </tr>    
+            <tr>
+                <td>Aroma</td>
+                <td><input type="text" name="odor" value="<?php echo $odor; ?>" size="100" /></td>
+            </tr>    
+            <tr>
+                <td>Sensaci&oacute;n</td>
+                <td><input type="text" name="sensation" value="<?php echo $sensation; ?>" size="100" /></td>
+            </tr>    
+          </table>  
+        </div>  
+          
         <div id="tab-data">
           <table class="form">
             <tr>
@@ -80,7 +118,7 @@
                   <?php } ?>
                 </div></td>
             </tr>
-            <tr>
+            <tr class="hide-me">
               <td><?php echo $entry_store; ?></td>
               <td><div class="scrollbox">
                   <?php $class = 'even'; ?>
@@ -205,6 +243,22 @@
 <script type="text/javascript"><!--
 <?php foreach ($languages as $language) { ?>
 CKEDITOR.replace('description<?php echo $language['language_id']; ?>', {
+	filebrowserBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserImageBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserFlashBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserImageUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserFlashUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>'
+});
+CKEDITOR.replace('benefits', {
+	filebrowserBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserImageBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserFlashBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserImageUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserFlashUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>'
+});
+CKEDITOR.replace('ingredients', {
 	filebrowserBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
 	filebrowserImageBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
 	filebrowserFlashBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',

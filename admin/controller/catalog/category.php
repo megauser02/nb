@@ -348,7 +348,7 @@ class ControllerCatalogCategory extends Controller {
 		} else {
 			$this->data['category_store'] = array(0);
 		}			
-		
+                
 		if (isset($this->request->post['keyword'])) {
 			$this->data['keyword'] = $this->request->post['keyword'];
 		} elseif (!empty($category_info)) {
@@ -357,6 +357,54 @@ class ControllerCatalogCategory extends Controller {
 			$this->data['keyword'] = '';
 		}
 
+		if (isset($this->request->post['benefits'])) {
+			$this->data['benefits'] = $this->request->post['benefits'];
+		} elseif (!empty($category_info)) {
+			$this->data['benefits'] = html_entity_decode($category_info['benefits'], ENT_QUOTES, 'UTF-8');
+		} else {
+			$this->data['benefits'] = '';
+		}
+                
+		if (isset($this->request->post['ingredients'])) {
+			$this->data['ingredients'] = $this->request->post['ingredients'];
+		} elseif (!empty($category_info)) {
+			$this->data['ingredients'] = html_entity_decode($category_info['ingredients'], ENT_QUOTES, 'UTF-8');
+		} else {
+			$this->data['ingredients'] = '';
+		}
+
+		if (isset($this->request->post['odor'])) {
+			$this->data['odor'] = $this->request->post['odor'];
+		} elseif (!empty($category_info)) {
+			$this->data['odor'] = $category_info['odor'];
+		} else {
+			$this->data['odor'] = '';
+		}
+                
+		if (isset($this->request->post['sensation'])) {
+			$this->data['sensation'] = $this->request->post['sensation'];
+		} elseif (!empty($category_info)) {
+			$this->data['sensation'] = $category_info['sensation'];
+		} else {
+			$this->data['sensation'] = '';
+		}
+
+		if (isset($this->request->post['first_banner'])) {
+			$this->data['first_banner'] = $this->request->post['first_banner'];
+		} elseif (!empty($category_info)) {
+			$this->data['first_banner'] = $category_info['first_banner'];
+		} else {
+			$this->data['first_banner'] = '';
+		}
+                
+		if (isset($this->request->post['second_banner'])) {
+			$this->data['second_banner'] = $this->request->post['second_banner'];
+		} elseif (!empty($category_info)) {
+			$this->data['second_banner'] = $category_info['second_banner'];
+		} else {
+			$this->data['second_banner'] = 'second_banner';
+		}
+                
 		if (isset($this->request->post['image'])) {
 			$this->data['image'] = $this->request->post['image'];
 		} elseif (!empty($category_info)) {
@@ -383,6 +431,22 @@ class ControllerCatalogCategory extends Controller {
 			$this->data['thumb'] = $this->model_tool_image->resize('no_image.jpg', 100, 100);
 		}
 		
+		if (isset($this->request->post['image_first_banner']) && file_exists(DIR_IMAGE . $this->request->post['image_first_banner'])) {
+			$this->data['thumb_first_banner'] = $this->model_tool_image->resize($this->request->post['image_first_banner'], 100, 100);
+		} elseif (!empty($category_info) && $category_info['first_banner'] && file_exists(DIR_IMAGE . $category_info['first_banner'])) {
+			$this->data['thumb_first_banner'] = $this->model_tool_image->resize($category_info['first_banner'], 100, 100);
+		} else {
+			$this->data['thumb_first_banner'] = $this->model_tool_image->resize('no_image.jpg', 100, 100);
+		}
+                
+		if (isset($this->request->post['image_second_banner']) && file_exists(DIR_IMAGE . $this->request->post['image_second_banner'])) {
+			$this->data['thumb_second_banner'] = $this->model_tool_image->resize($this->request->post['image_second_banner'], 100, 100);
+		} elseif (!empty($category_info) && $category_info['second_banner'] && file_exists(DIR_IMAGE . $category_info['second_banner'])) {
+			$this->data['thumb_second_banner'] = $this->model_tool_image->resize($category_info['second_banner'], 100, 100);
+		} else {
+			$this->data['thumb_second_banner'] = $this->model_tool_image->resize('no_image.jpg', 100, 100);
+		}
+                
 		if (isset($this->request->post['type_menu_image']) && file_exists(DIR_IMAGE . $this->request->post['type_menu_image'])) {
 			$this->data['type_menu_image_thumb'] = $this->model_tool_image->resize($this->request->post['type_menu_image'], 100, 100);
 		} elseif (!empty($category_info) && $category_info['type_menu_image'] && file_exists(DIR_IMAGE . $category_info['type_menu_image'])) {

@@ -1,7 +1,7 @@
 <?php
 class ModelCatalogCategory extends Model {
 	public function addCategory($data) {
-		$this->db->query("INSERT INTO " . DB_PREFIX . "category SET parent_id = '" . (int)$data['parent_id'] . "', `top` = '" . (isset($data['top']) ? (int)$data['top'] : 0) . "', `column` = '" . (int)$data['column'] . "', sort_order = '" . (int)$data['sort_order'] . "', status = '" . (int)$data['status'] . "', date_modified = NOW(), date_added = NOW(), type_menu_image = '" . $data['type_menu_image'] . "', color = '" . $this->db->escape($data['color']) . "'");
+		$this->db->query("INSERT INTO " . DB_PREFIX . "category SET parent_id = '" . (int)$data['parent_id'] . "', `top` = '" . (isset($data['top']) ? (int)$data['top'] : 0) . "', `column` = '" . (int)$data['column'] . "', sort_order = '" . (int)$data['sort_order'] . "', status = '" . (int)$data['status'] . "', date_modified = NOW(), date_added = NOW(), type_menu_image = '" . $data['type_menu_image'] . "', color = '" . $this->db->escape($data['color']) . "', odor='" . $this->db->escape($data['odor']) . "', sensation='" . $this->db->escape($data['sensation']) . "', benefits='" . $this->db->escape($data['benefits']) . "', ingredients ='" . $this->db->escape($data['ingredients']) . "', first_banner = '" . $this->db->escape($data['first_banner']) . "', second_banner = '" . $this->db->escape($data['second_banner']) . "'" );
 
 		$category_id = $this->db->getLastId();
 				
@@ -55,7 +55,8 @@ class ModelCatalogCategory extends Model {
 	}
 	
 	public function editCategory($category_id, $data) {
-		$this->db->query("UPDATE " . DB_PREFIX . "category SET parent_id = '" . (int)$data['parent_id'] . "', `top` = '" . (isset($data['top']) ? (int)$data['top'] : 0) . "', `column` = '" . (int)$data['column'] . "', sort_order = '" . (int)$data['sort_order'] . "', status = '" . (int)$data['status'] . "', date_modified = NOW(), type_menu_image = '" . $data['type_menu_image'] . "', color = '" . $this->db->escape($data['color']) . "' WHERE category_id = '" . (int)$category_id . "' ");
+            
+		$this->db->query("UPDATE " . DB_PREFIX . "category SET parent_id = '" . (int)$data['parent_id'] . "', `top` = '" . (isset($data['top']) ? (int)$data['top'] : 0) . "', `column` = '" . (int)$data['column'] . "', sort_order = '" . (int)$data['sort_order'] . "', status = '" . (int)$data['status'] . "', date_modified = NOW(), type_menu_image = '" . $data['type_menu_image'] . "', color = '" . $this->db->escape($data['color']) . "', odor='" . $this->db->escape($data['odor']) . "', sensation='" . $this->db->escape($data['sensation']) . "', benefits='" . $this->db->escape($data['benefits']) . "', ingredients ='" . $this->db->escape($data['ingredients']) . "', first_banner = '" . $this->db->escape($data['first_banner']) . "', second_banner = '" . $this->db->escape($data['second_banner']) . "' WHERE category_id = '" . (int)$category_id . "'");
 
 		if (isset($data['image'])) {
 			$this->db->query("UPDATE " . DB_PREFIX . "category SET image = '" . $this->db->escape(html_entity_decode($data['image'], ENT_QUOTES, 'UTF-8')) . "' WHERE category_id = '" . (int)$category_id . "'");
