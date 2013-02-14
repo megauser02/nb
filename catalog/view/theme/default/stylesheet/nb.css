@@ -1643,18 +1643,16 @@ ul.box-filter > li ul {
 .product-info {
 	overflow: hidden;
 	margin-bottom: 20px;
-        border: solid 1px red;
         clear: both;
 }
 .product-info > .left {
 	float: left;
 	margin-right: 15px;
-        border: solid 1px red;
         width: 450px;
+        height: 330px;
 }
 .product-info > .left + .right {
         float: right;
-        border: solid 1px red;
         width: 500px;
 }
 .product-info .image {
@@ -1692,12 +1690,11 @@ ul.box-filter > li ul {
 }
 .product-info .price {
 	overflow: auto;
-	border-bottom: 1px solid #E7E7E7;
 	padding: 0px;
-	margin-bottom: 10px;
-	font-size: 15px;
+	margin-top: 5px;
+	font-size: 20px;
 	font-weight: bold;
-	color: #333333;
+	color: #778700;
 }
 .product-info .price-old {
 	color: #F00;
@@ -1741,8 +1738,8 @@ ul.box-filter > li ul {
 	cursor: pointer;
 }
 .product-info .cart {
-	border: 1px solid red;
 	color: #4D4D4D;
+        width: 100%;overflow: hidden;        
 }
 .product-info .cart div > span {
 	color: #999;
@@ -2316,4 +2313,33 @@ ul.box-filter > li ul {
         color: #776db0; 
         float: right;
         width: 500px;
+        margin-bottom: 10px;
+        clear: none;
+        float: right;
 }
+.title-product-detail-left { 
+    float: left;font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 15px; 
+}
+.subtitles-content {
+        float: left;
+}
+.cart-elements {
+        float: right; position: relative;
+}
+.qty-data { float: left; margin-right: 10px; margin-top: 10px;}
+.buy-data { float: left;}
+.buy-data-img { float: left;margin-right: 10px;}
+input[type="button"].buy-data-input{ float: left;margin-top: 8px;} 
+.presentation { margin-top: 10px;font-size: 17px;color: #778700;}
+.charact-item { margin-top: 15px; font-size: 13px;color:#565555; }
+.charact-item p { padding: 0; margin: 0;}
+.charact-footer { clear: both;overflow: hidden;padding-top: 20px;}
+.charact-footer-item { float: left;width: 40%; }
+.charact-footer-item + .charact-footer-item { width: 48%;float: right;}
+.charact-footer-item h2 { margin-bottom: 10px;}
+.subtitle1 { text-transform: uppercase;}
+.subtitle2 { margin-top: 5px;}
+.charact-footer-item, .charact-item { font-size: 13px;color:#565555;}
+.sub-nav { overflow: hidden; width: 100%;clear: both;}

@@ -170,3 +170,39 @@
 2013-02-13 21:55:44 - PHP Notice:  Undefined variable: no_type_menu_image in C:\wamp\www\nb\admin\view\template\catalog\category_form.tpl on line 127
 2013-02-13 21:55:57 - PHP Notice:  Undefined variable: no_type_menu_image in C:\wamp\www\nb\admin\view\template\catalog\category_form.tpl on line 127
 2013-02-13 21:56:12 - PHP Notice:  Undefined variable: no_type_menu_image in C:\wamp\www\nb\admin\view\template\catalog\category_form.tpl on line 127
+2013-02-13 23:50:17 - PHP Notice:  Undefined index: odor in C:\wamp\www\nb\catalog\controller\product\product.php on line 337
+2013-02-13 23:50:17 - PHP Notice:  Undefined index: sensation in C:\wamp\www\nb\catalog\controller\product\product.php on line 343
+2013-02-13 23:50:17 - PHP Notice:  Undefined index: benefits in C:\wamp\www\nb\catalog\controller\product\product.php on line 349
+2013-02-13 23:50:17 - PHP Notice:  Undefined index: ingredients in C:\wamp\www\nb\catalog\controller\product\product.php on line 355
+2013-02-13 23:50:17 - PHP Notice:  Undefined index: usage in C:\wamp\www\nb\catalog\controller\product\product.php on line 361
+2013-02-13 23:50:17 - PHP Notice:  Undefined variable: subtitle in C:\wamp\www\nb\catalog\view\theme\default\template\product\product.tpl on line 36
+2013-02-13 23:52:54 - PHP Notice:  Undefined index: sensation in C:\wamp\www\nb\catalog\controller\product\product.php on line 349
+2013-02-13 23:52:54 - PHP Notice:  Undefined index: benefits in C:\wamp\www\nb\catalog\controller\product\product.php on line 355
+2013-02-13 23:52:54 - PHP Notice:  Undefined index: ingredients in C:\wamp\www\nb\catalog\controller\product\product.php on line 361
+2013-02-13 23:52:54 - PHP Notice:  Undefined index: usage in C:\wamp\www\nb\catalog\controller\product\product.php on line 367
+2013-02-13 23:52:54 - PHP Notice:  Undefined variable: odor in C:\wamp\www\nb\catalog\view\theme\default\template\product\product.tpl on line 83
+2013-02-13 23:53:22 - PHP Notice:  Undefined index: sensation in C:\wamp\www\nb\catalog\controller\product\product.php on line 349
+2013-02-13 23:53:22 - PHP Notice:  Undefined index: benefits in C:\wamp\www\nb\catalog\controller\product\product.php on line 355
+2013-02-13 23:53:22 - PHP Notice:  Undefined index: ingredients in C:\wamp\www\nb\catalog\controller\product\product.php on line 361
+2013-02-13 23:53:22 - PHP Notice:  Undefined index: usage in C:\wamp\www\nb\catalog\controller\product\product.php on line 367
+2013-02-13 23:53:22 - PHP Notice:  Undefined variable: odor in C:\wamp\www\nb\catalog\view\theme\default\template\product\product.tpl on line 83
+2013-02-14 16:39:10 - PHP Notice:  Undefined index: odor in C:\wamp\www\nb\catalog\controller\product\product.php on line 349
+2013-02-14 16:39:10 - PHP Notice:  Undefined index: sensation in C:\wamp\www\nb\catalog\controller\product\product.php on line 355
+2013-02-14 16:39:10 - PHP Notice:  Undefined index: benefits in C:\wamp\www\nb\catalog\controller\product\product.php on line 361
+2013-02-14 16:39:10 - PHP Notice:  Undefined index: ingredients in C:\wamp\www\nb\catalog\controller\product\product.php on line 367
+2013-02-14 16:39:10 - PHP Notice:  Undefined index: usage in C:\wamp\www\nb\catalog\controller\product\product.php on line 373
+2013-02-14 18:12:10 - PHP Notice:  Error: Unknown column 'tb1.name' in 'field list'<br />Error No: 1054<br />select tb1.name
+                                             from oc_category as tb1 
+                                             left join oc_product_to_category as tb2 on tb2.category_id = tb1.category_id 
+                                             where tb2.product_id = '112' and tb1.parent_id = 0  in C:\wamp\www\nb\system\database\mysql.php on line 50
+2013-02-14 18:16:28 - PHP Notice:  Error: Not unique table/alias: 'tb2'<br />Error No: 1066<br />select tb3.name
+                                             from oc_category as tb1 
+                                             left join oc_product_to_category as tb2 on tb2.category_id = tb1.category_id 
+                                             left join oc_category_description as tb2 on tb2.category_id = tb1.category_id 
+                                             where tb2.product_id = '112' and tb1.parent_id = 0  in C:\wamp\www\nb\system\database\mysql.php on line 50
+2013-02-14 18:17:47 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '_select tb3.name
+                                             from oc_category ' at line 1<br />Error No: 1064<br />_select tb3.name
+                                             from oc_category as tb1 
+                                             left join oc_product_to_category as tb2 on tb2.category_id = tb1.category_id 
+                                             left join oc_category_description as tb3 on tb2.category_id = tb1.category_id 
+                                             where tb2.product_id = '112' and tb1.parent_id = 0  in C:\wamp\www\nb\system\database\mysql.php on line 50

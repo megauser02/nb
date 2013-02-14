@@ -88,5 +88,21 @@ class ModelCatalogCategory extends Model {
 		}
         }        
         
+        public function getTopCategory( $product_id = NULL ){
+		$query = $this->db->query("select tb3.name
+                                             from " . DB_PREFIX . "category as tb1 
+                                             left join " . DB_PREFIX . "product_to_category as tb2 on tb2.category_id = tb1.category_id 
+                                             left join " . DB_PREFIX . "category_description as tb3 on tb3.category_id = tb1.category_id 
+                                             where tb2.product_id = '" . (int)$product_id . "' and tb1.parent_id = 0 "
+                                          );
+		
+		if ($query->num_rows) {
+			return $query->row['name'];
+		} else {
+			return false;
+		}
+        }
+        
+        
 }
 ?>

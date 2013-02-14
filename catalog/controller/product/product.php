@@ -226,12 +226,6 @@ class ControllerProductProduct extends Controller {
 				$url .= '&limit=' . $this->request->get['limit'];
 			}
 																		
-			$this->data['breadcrumbs'][] = array(
-				'text'      => $product_info['name'],
-				'href'      => $this->url->link('product/product', $url . '&product_id=' . $this->request->get['product_id']),
-				'separator' => $this->language->get('text_separator')
-			);			
-			
 			$this->document->setTitle($product_info['name']);
 			$this->document->setDescription($product_info['meta_description']);
 			$this->document->setKeywords($product_info['meta_keyword']);
@@ -308,7 +302,7 @@ class ControllerProductProduct extends Controller {
 			if ($product_info['image']) {
 				$this->data['thumb'] = $this->model_tool_image->resize($product_info['image'], $this->config->get('config_image_thumb_width'), $this->config->get('config_image_thumb_height'));
 			} else {
-				$this->data['thumb'] = $this->model_tool_image->resize('no_image.jpg', $this->config->get('config_image_thumb_width'), $this->config->get('config_image_thumb_height'));
+				$this->data['thumb'] = $this->model_tool_image->resize('no_image_detail.jpg', $this->config->get('config_image_thumb_width'), $this->config->get('config_image_thumb_height'));
 			}
 			
 			$this->data['images'] = array();
@@ -334,12 +328,56 @@ class ControllerProductProduct extends Controller {
 				$this->data['special'] = false;
 			}
 			
+			if ($product_info['upc']) {
+				$this->data['presentation'] = $product_info['upc'];
+			} else {
+				$this->data['presentation'] = false;
+			}
+                        
+			if ($product_info['ean']) {
+				$this->data['subtitle'] = $product_info['ean'];
+			} else {
+				$this->data['subtitle'] = false;
+			}
+                        
+			if ($product_info['odor']) {
+				$this->data['odor'] = $product_info['odor'];
+			} else {
+				$this->data['odor'] = false;
+			}
+                        
+			if ($product_info['sensation']) {
+				$this->data['sensation'] = $product_info['sensation'];
+			} else {
+				$this->data['sensation'] = false;
+			}
+
+			if ($product_info['benefits']) {
+				$this->data['benefits'] = html_entity_decode($product_info['benefits'], ENT_QUOTES, 'UTF-8');
+			} else {
+				$this->data['benefits'] = false;
+			}
+
+			if ($product_info['ingredients']) {
+				$this->data['ingredients'] = html_entity_decode($product_info['ingredients'], ENT_QUOTES, 'UTF-8');
+			} else {
+				$this->data['ingredients'] = false;
+			}
+                        
+			if ($product_info['usage']) {
+				$this->data['usage'] = html_entity_decode($product_info['usage'], ENT_QUOTES, 'UTF-8');
+			} else {
+				$this->data['usage'] = false;
+			}
+                        
 			if ($this->config->get('config_tax')) {
 				$this->data['tax'] = $this->currency->format((float)$product_info['special'] ? $product_info['special'] : $product_info['price']);
 			} else {
 				$this->data['tax'] = false;
 			}
 			
+                        $this->data['top_title_category'] = $this->model_catalog_category->getTopCategory($this->request->get['product_id']);
+                        
 			$discounts = $this->model_catalog_product->getProductDiscounts($this->request->get['product_id']);
 			
 			$this->data['discounts'] = array(); 

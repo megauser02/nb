@@ -10,7 +10,11 @@
     <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
     <?php } ?>
   </div>
-  <h1 class="title-product-detail color-title" ><?php echo $heading_title; ?></h1>
+    
+  <div class="sub-nav">
+     <h1 class="title-product-detail-left" ><?php echo $top_title_category; ?>&nbsp;</h1> <h1 class="title-product-detail color-title" ><?php echo $heading_title; ?></h1>
+  </div>  
+  
   <div class="product-info">
       
     <?php if ($thumb || $images) { ?>
@@ -30,43 +34,37 @@
     
     <div class="right">
         
-      <div class="cart" style=" border: solid 1px red;width: 100%;overflow: hidden;">
+      <div class="cart">
           
-       <div style="border: solid 1px red;float: left;" class="color-title">
-            <div>dasdadasd</div>
-            <div><b>dasdadasd</b></div>
+       <div class="subtitles-content color-title">
+           <div class="subtitle1"><?php echo $subtitle; ?></div>
+           <div class="subtitle2"><b>540545450</b></div>
         </div>
         
-        <div style=" float: right; position: relative;">
-          <div style="float: left; margin-right: 10px; margin-top: 10px;">
+       <div class="cart-elements">
+          <div class="qty-data" >
             <?php echo $text_qty; ?>  
             <input type="text" name="quantity" size="2" value="<?php echo $minimum; ?>" />
             <input type="hidden" name="product_id" size="2" value="<?php echo $product_id; ?>" />
           </div>
-          <div style="float: left;">
-            <img src="<?php echo HTTP_IMG_TEMPLATE; ?>bag.png" alt="" style=" float: left;margin-right: 10px;" />
-            <input type="button" value="<?php echo $button_cart; ?>" id="button-cart" class="button" style=" float: left;margin-top: 8px;" />
+          <div class="buy-data" >
+            <img src="<?php echo HTTP_IMG_TEMPLATE; ?>bag.png" alt="" class="buy-data-img" />
+            <input type="button" value="<?php echo $button_cart; ?>" id="button-cart" class="button buy-data-input" />
           </div>
         </div>
 
       </div>
         
-      <div style=" border: solid 1px red;">dasd5asd5sa4</div>           
+      <div class="presentation" ><?php echo $presentation; ?></div>           
         
       <?php if ($price) { ?>
-      <div class="price"><?php echo $text_price; ?>
+      <div class="price">
         <?php if (!$special) { ?>
         <?php echo $price; ?>
         <?php } else { ?>
         <span class="price-old"><?php echo $price; ?></span> <span class="price-new"><?php echo $special; ?></span>
         <?php } ?>
         <br />
-        <?php if ($tax) { ?>
-        <span class="price-tax"><?php echo $text_tax; ?> <?php echo $tax; ?></span><br />
-        <?php } ?>
-        <?php if ($points) { ?>
-        <span class="reward"><small><?php echo $text_points; ?> <?php echo $points; ?></small></span><br />
-        <?php } ?>
         <?php if ($discounts) { ?>
         <br />
         <div class="discount">
@@ -78,28 +76,28 @@
       </div>
       <?php } ?>
       
-      <div style=" border: solid 1px red;">
+      <div class="charact-item">
           <h2 class="color-title">Aroma</h2>
-          dasd5asd5sa4
+          <?php echo $odor; ?>
       </div>           
-      <div style=" border: solid 1px red;">
+      <div class="charact-item">
           <h2 class="color-title">Sensaci&oacute;n</h2>
-          dasd5asd5sa4
+          <?php echo $sensation; ?>
       </div>           
-      <div style=" border: solid 1px red;">
+      <div class="charact-item">
           <h2 class="color-title">Beneficios</h2>
-          dasd5asd5sa4
+          <?php echo $benefits; ?>
       </div>           
     </div>
     
-    <div style="border: solid 2px green;clear: both;overflow: hidden;padding-top: 73px;">
-        <div style=" float: left; border: solid 1px #00FFFF;width: 48%;">
+    <div class="charact-footer" >
+        <div class="charact-footer-item" >
             <h2 class="color-title">Algunos ingredientes</h2>
-            4545878
+            <?php echo $ingredients; ?>
         </div>
-        <div style=" float: left; border: solid 1px #00FFFF;width: 48%;">
+        <div class="charact-footer-item" >
             <h2 class="color-title">Modo de uso</h2>
-            8787778
+            <?php echo $usage; ?>
         </div>
     </div>
     
