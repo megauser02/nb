@@ -30,6 +30,7 @@
       </div>
       <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="form">
         <div id="tab-general">
+            
           <div id="languages" class="htabs">
             <?php foreach ($languages as $language) { ?>
             <a href="#language<?php echo $language['language_id']; ?>"><img src="view/image/flags/<?php echo $language['image']; ?>" title="<?php echo $language['name']; ?>" /> <?php echo $language['name']; ?></a>
@@ -65,6 +66,8 @@
           </div>
           <?php } ?>
         </div>
+          
+          
         <div id="tab-data">
           <table class="form">
             <tr>
@@ -151,12 +154,6 @@
               <td><input type="text" name="keyword" value="<?php echo $keyword; ?>" /></td>
             </tr>
             <tr>
-              <td><?php echo $entry_image; ?></td>
-              <td><div class="image"><img src="<?php echo $thumb; ?>" alt="" id="thumb" /><br />
-                  <input type="hidden" name="image" value="<?php echo $image; ?>" id="image" />
-                  <a onclick="image_upload('image', 'thumb');"><?php echo $text_browse; ?></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a onclick="$('#thumb').attr('src', '<?php echo $no_image; ?>'); $('#image').attr('value', '');"><?php echo $text_clear; ?></a></div></td>
-            </tr>
-            <tr>
               <td><?php echo $entry_date_available; ?></td>
               <td><input type="text" name="date_available" value="<?php echo $date_available; ?>" size="12" class="date" /></td>
             </tr>
@@ -220,6 +217,13 @@
           
         <div id="tab-character">
           <table class="form">
+              
+            <tr>
+              <td><?php echo $entry_image; ?></td>
+              <td><div class="image"><img src="<?php echo $thumb; ?>" alt="" id="thumb" /><br />
+                  <input type="hidden" name="image" value="<?php echo $image; ?>" id="image" />
+                  <a onclick="image_upload('image', 'thumb');"><?php echo $text_browse; ?></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a onclick="$('#thumb').attr('src', '<?php echo $no_image; ?>'); $('#image').attr('value', '');"><?php echo $text_clear; ?></a></div></td>
+            </tr>
             <tr>
               <td>Presentaci&oacute;n
                   <span class="help">500mL, 10 gr, 1 pieza, etc.</span>

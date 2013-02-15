@@ -2354,10 +2354,14 @@ ul.box-filter > li ul {
 .subtitles-content {
         float: left;
 }
+.subtitles-content p {
+        margin: 0;
+        font-size: 14px;
+}
 .cart-elements {
         float: right; position: relative;
 }
-.qty-data { float: left; margin-right: 10px; margin-top: 10px;}
+.qty-data { float: left; margin-right: 10px; margin-top: 10px;display: none;}
 .buy-data { float: left;}
 .buy-data-img { float: left;margin-right: 10px;}
 input[type="button"].buy-data-input{ float: left;margin-top: 8px;} 

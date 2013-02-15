@@ -289,3 +289,14 @@
 2013-02-15 17:44:26 - PHP Notice:  Undefined variable: module in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner.tpl on line 16
 2013-02-15 17:59:11 - PHP Notice:  Undefined index: limit in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 36
 2013-02-15 18:00:51 - PHP Notice:  Undefined variable: banner_rotator in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 36
+2013-02-15 18:54:25 - PHP Notice:  Undefined index: subtitle in C:\wamp\www\nb\catalog\controller\product\category.php on line 298
+2013-02-15 18:54:25 - PHP Notice:  Undefined index: subtitle in C:\wamp\www\nb\catalog\controller\product\category.php on line 298
+2013-02-15 18:54:25 - PHP Notice:  Undefined index: subtitle in C:\wamp\www\nb\catalog\controller\product\category.php on line 298
+2013-02-15 18:54:25 - PHP Notice:  Undefined index: subtitle in C:\wamp\www\nb\catalog\controller\product\category.php on line 298
+2013-02-15 18:54:25 - PHP Notice:  Undefined index: subtitle in C:\wamp\www\nb\catalog\controller\product\category.php on line 298
+2013-02-15 18:54:25 - PHP Notice:  Undefined index: subtitle in C:\wamp\www\nb\catalog\controller\product\category.php on line 298
+2013-02-15 18:54:25 - PHP Notice:  Undefined index: subtitle in C:\wamp\www\nb\catalog\controller\product\category.php on line 298
+2013-02-15 18:54:25 - PHP Notice:  Undefined index: subtitle in C:\wamp\www\nb\catalog\controller\product\category.php on line 298
+2013-02-15 18:54:25 - PHP Notice:  Undefined index: subtitle in C:\wamp\www\nb\catalog\controller\product\category.php on line 298
+2013-02-15 18:54:25 - PHP Notice:  Undefined index: subtitle in C:\wamp\www\nb\catalog\controller\product\category.php on line 298
+2013-02-15 18:54:25 - PHP Notice:  Undefined index: subtitle in C:\wamp\www\nb\catalog\controller\product\category.php on line 298

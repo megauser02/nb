@@ -86,7 +86,9 @@ $(document).ready(function() {
 	});	
         
         $('.first-banner').click(function(){
-            console.log('click-me!');
+                $('html, body').animate({
+                    scrollTop: $("#aux-scroll").offset().top
+                }, 1000);            
         });
         
         

@@ -43,7 +43,7 @@
    
   <div class="category-banners"><?php echo $content_bottom; ?></div>
     
-  <div class="category-info">
+  <div class="category-info" id="aux-scroll">
       <div class="category-info-item last-category color-title"><?php echo $heading_title; ?></div>
       <?php if ($description) { ?>
         <div class="category-info-item middle-category color-title"><?php echo $description; ?></div>

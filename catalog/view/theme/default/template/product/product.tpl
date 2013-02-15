@@ -37,8 +37,7 @@
       <div class="cart">
           
        <div class="subtitles-content color-title">
-           <div class="subtitle1"><?php echo $subtitle; ?></div>
-           <div class="subtitle2"><b>540545450</b></div>
+           <?php echo $description; ?>
         </div>
         
        <div class="cart-elements">
