@@ -78,13 +78,16 @@
   <?php } ?>
   <?php if ($products) { ?>
   <div class="product-list">
+    <?php $e = 1; ?>  
     <?php foreach ($products as $product) { ?>
-    <div>
+    
+    <div <?php if( $e%4 == 0) { echo 'class="clear-item"'; } ?> >
       <?php if ($product['thumb']) { ?>
       <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>" /></a></div>
       <?php } ?>
       <div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
-      <div class="description"><?php echo $product['description']; ?></div>
+      <div class="description"><?php echo $product['subtitle']; ?></div>
+      <div class="presentation"><?php echo $product['presentation']; ?></div>
       <?php if ($product['price']) { ?>
       <div class="price">
         <?php if (!$product['special']) { ?>
@@ -103,9 +106,12 @@
       <?php } ?>
       <div class="cart">
         <input type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button" />
+        <a href="<?php echo $product['href']; ?>" class="detail-link">Detalles</a>
       </div>
     </div>
+    <?php $e++; ?>
     <?php } ?>
+    
   </div>
   <div class="pagination"><?php echo $pagination; ?></div>
   <?php } ?>

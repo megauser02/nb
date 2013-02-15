@@ -263,7 +263,7 @@ class ControllerProductCategory extends Controller {
 				if ($result['image']) {
 					$image = $this->model_tool_image->resize($result['image'], $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height'));
 				} else {
-					$image = false;
+					$image = $this->model_tool_image->resize('no_image_list.jpg', $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height'));
 				}
 				
 				if (($this->config->get('config_customer_price') && $this->customer->isLogged()) || !$this->config->get('config_customer_price')) {
@@ -295,6 +295,8 @@ class ControllerProductCategory extends Controller {
 					'thumb'       => $image,
 					'name'        => $result['name'],
 					'description' => utf8_substr(strip_tags(html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8')), 0, 100) . '..',
+                                        'subtitle'    => utf8_substr(strip_tags(html_entity_decode($result['ean'], ENT_QUOTES, 'UTF-8')), 0, 50),
+                                        'presentation'    => utf8_substr(strip_tags(html_entity_decode($result['upc'], ENT_QUOTES, 'UTF-8')), 0, 50),
 					'price'       => $price,
 					'special'     => $special,
 					'tax'         => $tax,

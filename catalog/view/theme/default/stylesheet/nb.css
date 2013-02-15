@@ -1428,7 +1428,7 @@ ul.box-filter > li ul {
 /* category */
 .category-info {
 	overflow: hidden;
-	margin: 40px 0 20px 0;
+	margin: 40px 0 30px 0;
 }
 .category-info .image {
 	float: left;
@@ -1504,30 +1504,28 @@ ul.box-filter > li ul {
 }
 .product-list > div {
 	overflow: hidden;
-	margin-bottom: 15px;
+        float: left;
+        width: 220px;
+        height: 315px;
+        margin: 0 33px 33px 0;
+}
+.product-list > div.clear-item { 
+        margin: 0 0 30px 0;
+        float: right;
 }
 .product-list .right {
 	float: right;
 	margin-left: 15px;
 }
-.product-list > div + div {
-	border-top: 1px solid #EEEEEE;
-	padding-top: 16px;
-}
-.product-list .image {
-	float: left;
-	margin-right: 10px;
-}
+.product-list > div + div {}
+.product-list .image {}
 .product-list .image img {
-	padding: 3px;
-	border: 1px solid #E7E7E7;
 }
 .product-list .name {
-	margin-bottom: 3px;
+        margin: 5px 0 3px 0;
 }
 .product-list .name a {
-	color: #38B0E3;
-	font-weight: bold;
+	color: #4D4D4D;
 	text-decoration: none;
 }
 .product-list .description {
@@ -1539,12 +1537,11 @@ ul.box-filter > li ul {
 	color: #7B7B7B;
 }
 .product-list .price {
-	float: right;
-	height: 50px;
-	margin-left: 8px;
-	text-align: right;
-	color: #333333;
-	font-size: 12px;
+	text-align: left;
+	font-size: 17px;
+        color: #758600;
+        font-weight: bold;
+        margin: 10px 0;
 }
 .product-list .price-old {
 	color: #F00;
@@ -1558,8 +1555,29 @@ ul.box-filter > li ul {
 	font-weight: normal;
 	color: #BBBBBB;
 }
+.product-list .presentation {
+    color: #758600;
+    font-weight: lighter;
+    text-align: left;
+    font-size: 14px;
+    margin: 0;
+}
 .product-list .cart {
-	margin-bottom: 3px;
+    overflow: hidden;
+}
+.product-list .cart .button {
+    float: left;
+    text-transform: uppercase;
+}
+.product-list .detail-link {
+    float: left;
+    padding: 4px 12px 3px 12px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background: #999999;
+    text-transform: uppercase;
+    margin-left: 13px;
 }
 .product-list .wishlist, .product-list .compare {
 	margin-bottom: 3px;
