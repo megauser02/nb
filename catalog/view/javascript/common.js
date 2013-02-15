@@ -84,6 +84,12 @@ $(document).ready(function() {
 			$(this).remove();
 		});
 	});	
+        
+        $('.first-banner').click(function(){
+            console.log('click-me!');
+        });
+        
+        
 });
 
 function getURLVar(key) {

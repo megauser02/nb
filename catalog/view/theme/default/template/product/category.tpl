@@ -1,21 +1,58 @@
 <?php echo $header; ?><?php echo $column_left; ?><?php echo $column_right; ?>
+<style>
+    .color-title { color: #<?php echo $color; ?>; }
+</style>
 <div id="content"><?php echo $content_top; ?>
   <div class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
     <?php } ?>
   </div>
-  <h1><?php echo $heading_title; ?></h1>
-  <?php if ($thumb || $description) { ?>
+    
+    <div class="characteristics-data">
+        
+        <?php if( $first_banner ) { ?>
+        <img src="<?php echo $first_banner; ?>" alt="" class="first-banner" />
+        <?php } ?>
+        
+        <div class="benefits color-title">
+            <h2>Beneficios</h2>
+            <?php echo $benefits; ?>
+        </div>
+        
+        <?php if( $second_banner ) { ?>
+        <img src="<?php echo $second_banner; ?>" alt="" class="second-banner" />
+        <?php } ?>
+        
+        <ul class="bottom-charact color-title">
+            <li>
+                <b class="charact-title">Algunos ingredientes:&nbsp;</b>
+                <?php echo $ingredients; ?>
+            </li>
+            <li>
+                <b class="charact-title">Aroma:&nbsp;</b>
+                <?php echo $odor; ?>
+            </li>
+            <li>
+                <b class="charact-title">Sensaci&oacute;n:&nbsp;</b>
+                <?php echo $sensation; ?>
+            </li>
+        </ul>
+        
+    </div>
+   
+  <div class="category-banners"><?php echo $content_bottom; ?></div>
+    
   <div class="category-info">
-    <?php if ($thumb) { ?>
-    <div class="image"><img src="<?php echo $thumb; ?>" alt="<?php echo $heading_title; ?>" /></div>
-    <?php } ?>
-    <?php if ($description) { ?>
-    <?php echo $description; ?>
-    <?php } ?>
+      <div class="category-info-item last-category color-title"><?php echo $heading_title; ?></div>
+      <?php if ($description) { ?>
+        <div class="category-info-item middle-category color-title"><?php echo $description; ?></div>
+      <?php } ?>
+      <?php if( $parent_cat_name ) { ?>
+        <div class="first-category color-title"><?php echo $parent_cat_name; ?></div>
+      <?php } ?>
   </div>
-  <?php } ?>
+  
   <?php if ($categories) { ?>
   <h2><?php echo $text_refine; ?></h2>
   <div class="category-list">
@@ -78,5 +115,5 @@
     <div class="right"><a href="<?php echo $continue; ?>" class="button"><?php echo $button_continue; ?></a></div>
   </div>
   <?php } ?>
-  <?php echo $content_bottom; ?></div>
+  </div>
 <?php echo $footer; ?>

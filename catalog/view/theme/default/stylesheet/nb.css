@@ -543,14 +543,25 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+@font-face {
+    font-family: 'brie_lightregular';
+    src: url('bri293-webfont.eot');
+    src: url('bri293-webfont.eot?#iefix') format('embedded-opentype'),
+         url('bri293-webfont.woff') format('woff'),
+         url('bri293-webfont.ttf') format('truetype'),
+         url('bri293-webfont.svg#brie_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 html {
 	overflow-y: scroll;
 	margin: 0;
 	padding: 0;
 }
 body {
-	/*background-color: #ffffff;*/
-        background: url(../image/bg.png);
+	background-color: #ffffff;
 	color: #000000;
 	font-family: century gothic,sans-serif;
 	margin: 0px;
@@ -1416,8 +1427,8 @@ ul.box-filter > li ul {
 }
 /* category */
 .category-info {
-	overflow: auto;
-	margin-bottom: 20px;
+	overflow: hidden;
+	margin: 40px 0 20px 0;
 }
 .category-info .image {
 	float: left;
@@ -1492,7 +1503,7 @@ ul.box-filter > li ul {
 	font-weight: bold;
 }
 .product-list > div {
-	overflow: auto;
+	overflow: hidden;
 	margin-bottom: 15px;
 }
 .product-list .right {
@@ -2343,3 +2354,18 @@ input[type="button"].buy-data-input{ float: left;margin-top: 8px;}
 .subtitle2 { margin-top: 5px;}
 .charact-footer-item, .charact-item { font-size: 13px;color:#565555;}
 .sub-nav { overflow: hidden; width: 100%;clear: both;}
+.characteristics-data { clear: both;}
+.first-banner, .second-banner { margin: 10px 0;}
+.first-banner { cursor: pointer;}
+.benefits { padding-top: 5px; }
+.benefits h2, .charact-title { color: #605f5f;text-transform: uppercase;font-weight: bold;font-size: 15px;}
+.bottom-charact { overflow: hidden;padding-bottom: 5px;}
+.bottom-charact li { float: left;width: 330px;font-size: 13px;}
+.bottom-charact li + li { width: 300px;margin-left: 100px;width: 200px;}
+.bottom-charact li + li + li { float: right;margin: 0;width: 300px;}
+.bottom-charact li p, .benefits p { display: inline;font-size: 13px;}
+.middle-category, .first-category { font-family: 'brie_lightregular';}
+.middle-category p { margin: 4px 0 0 40px;padding: 0;font-size: 20px;}
+.category-info-item, .first-category { float: left;font-size: 18px;}
+.first-category { text-transform: uppercase;float: right;margin-top: 4px;}
+.last-category { font-size: 20px;}

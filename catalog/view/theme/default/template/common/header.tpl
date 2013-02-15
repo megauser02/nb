@@ -37,6 +37,11 @@ DD_belatedPNG.fix('#logo img');
 </script>
 <![endif]-->
 <?php echo $google_analytics; ?>
+
+<script>
+Cufon.replace('.last-category', { fontFamily: 'Zapfino' });
+</script>
+
 </head>
 <body>
 <div id="container">

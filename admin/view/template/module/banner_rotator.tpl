@@ -18,6 +18,7 @@
         <table id="module" class="list">
           <thead>
             <tr>
+              <td class="left">L&iacute;mite</td>  
               <td class="left"><?php echo $entry_banner_rotator; ?></td>
               <td class="left"><span class="required">*</span> <?php echo $entry_dimension; ?></td>
               <td class="left"><?php echo $entry_layout; ?></td>
@@ -31,6 +32,9 @@
           <?php foreach ($modules as $module) { ?>
           <tbody id="module-row<?php echo $module_row; ?>">
             <tr>
+              <td>
+                  <input type="text" name="banner_rotator_module[<?php echo $module_row; ?>][limit]" value="<?php echo $module['limit']; ?>" size="3" />
+              </td>  
               <td class="left"><select name="banner_rotator_module[<?php echo $module_row; ?>][banner_id]">
                   <?php foreach ($banner_rotators as $banner_rotator) { ?>
                   <?php if ($banner_rotator['banner_id'] == $module['banner_id']) { ?>
@@ -93,7 +97,7 @@
           <?php } ?>
           <tfoot>
             <tr>
-              <td colspan="6"></td>
+              <td colspan="7"></td>
               <td class="left"><a onclick="addModule();" class="button"><?php echo $button_add_module; ?></a></td>
             </tr>
           </tfoot>
@@ -108,6 +112,9 @@ var module_row = <?php echo $module_row; ?>;
 function addModule() {	
 	html  = '<tbody id="module-row' + module_row + '">';
 	html += '  <tr>';
+        html += '  <td>';
+        html += '  <input type="text" name="banner_rotator_module[' + module_row + '][limit]" value="" size="3" />';
+        html += '  </td>';
 	html += '    <td class="left"><select name="banner_rotator_module[' + module_row + '][banner_id]">';
 	<?php foreach ($banner_rotators as $banner_rotator) { ?>
 	html += '      <option value="<?php echo $banner_rotator['banner_id']; ?>"><?php echo addslashes($banner_rotator['name']); ?></option>';

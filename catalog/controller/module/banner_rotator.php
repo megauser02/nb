@@ -10,7 +10,7 @@ class ControllerModuleBannerRotator extends Controller {
 				
 		$this->data['banners'] = array();
 		
-		$results = $this->model_design_banner->getBannerRotator($setting['banner_id']);
+		$results = $this->model_design_banner->getBannerRotator($setting['banner_id'], $setting['limit']);
 		  
 		foreach ($results as $result) {
 			if (file_exists(DIR_IMAGE . $result['image'])) {

@@ -206,3 +206,86 @@
                                              left join oc_product_to_category as tb2 on tb2.category_id = tb1.category_id 
                                              left join oc_category_description as tb3 on tb2.category_id = tb1.category_id 
                                              where tb2.product_id = '112' and tb1.parent_id = 0  in C:\wamp\www\nb\system\database\mysql.php on line 50
+2013-02-14 23:28:22 - PHP Notice:  Use of undefined constant banner - assumed 'banner' in C:\wamp\www\nb\catalog\view\theme\default\template\product\category.tpl on line 14
+2013-02-14 23:28:23 - PHP Notice:  Undefined variable: first in C:\wamp\www\nb\catalog\view\theme\default\template\product\category.tpl on line 14
+2013-02-14 23:28:23 - PHP Notice:  Use of undefined constant banner - assumed 'banner' in C:\wamp\www\nb\catalog\view\theme\default\template\product\category.tpl on line 23
+2013-02-14 23:28:23 - PHP Notice:  Undefined variable: second in C:\wamp\www\nb\catalog\view\theme\default\template\product\category.tpl on line 23
+2013-02-14 23:28:45 - PHP Notice:  Use of undefined constant banner - assumed 'banner' in C:\wamp\www\nb\catalog\view\theme\default\template\product\category.tpl on line 15
+2013-02-14 23:28:45 - PHP Notice:  Undefined variable: first in C:\wamp\www\nb\catalog\view\theme\default\template\product\category.tpl on line 15
+2013-02-14 23:28:45 - PHP Notice:  Use of undefined constant banner - assumed 'banner' in C:\wamp\www\nb\catalog\view\theme\default\template\product\category.tpl on line 24
+2013-02-14 23:28:45 - PHP Notice:  Undefined variable: second in C:\wamp\www\nb\catalog\view\theme\default\template\product\category.tpl on line 24
+2013-02-14 23:30:15 - PHP Notice:  Use of undefined constant banner - assumed 'banner' in C:\wamp\www\nb\catalog\view\theme\default\template\product\category.tpl on line 15
+2013-02-14 23:30:15 - PHP Notice:  Undefined variable: first in C:\wamp\www\nb\catalog\view\theme\default\template\product\category.tpl on line 15
+2013-02-14 23:30:15 - PHP Notice:  Use of undefined constant banner - assumed 'banner' in C:\wamp\www\nb\catalog\view\theme\default\template\product\category.tpl on line 24
+2013-02-14 23:30:15 - PHP Notice:  Undefined variable: second in C:\wamp\www\nb\catalog\view\theme\default\template\product\category.tpl on line 24
+2013-02-14 23:31:35 - PHP Notice:  Use of undefined constant banner - assumed 'banner' in C:\wamp\www\nb\catalog\view\theme\default\template\product\category.tpl on line 15
+2013-02-14 23:31:35 - PHP Notice:  Undefined variable: first in C:\wamp\www\nb\catalog\view\theme\default\template\product\category.tpl on line 15
+2013-02-14 23:31:35 - PHP Notice:  Use of undefined constant banner - assumed 'banner' in C:\wamp\www\nb\catalog\view\theme\default\template\product\category.tpl on line 24
+2013-02-14 23:31:35 - PHP Notice:  Undefined variable: second in C:\wamp\www\nb\catalog\view\theme\default\template\product\category.tpl on line 24
+2013-02-15 17:37:45 - PHP Notice:  Undefined variable: setting in C:\wamp\www\nb\catalog\controller\product\category.php on line 445
+2013-02-15 17:37:45 - PHP Notice:  Undefined variable: setting in C:\wamp\www\nb\catalog\controller\product\category.php on line 445
+2013-02-15 17:37:45 - PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in C:\wamp\www\nb\system\library\image.php on line 96
+2013-02-15 17:37:45 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in C:\wamp\www\nb\system\library\image.php on line 104
+2013-02-15 17:37:45 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in C:\wamp\www\nb\system\library\image.php on line 107
+2013-02-15 17:37:45 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in C:\wamp\www\nb\system\library\image.php on line 109
+2013-02-15 17:37:45 - PHP Notice:  Undefined variable: setting in C:\wamp\www\nb\catalog\controller\product\category.php on line 445
+2013-02-15 17:37:45 - PHP Notice:  Undefined variable: setting in C:\wamp\www\nb\catalog\controller\product\category.php on line 445
+2013-02-15 17:37:45 - PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in C:\wamp\www\nb\system\library\image.php on line 96
+2013-02-15 17:37:45 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in C:\wamp\www\nb\system\library\image.php on line 104
+2013-02-15 17:37:45 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in C:\wamp\www\nb\system\library\image.php on line 107
+2013-02-15 17:37:45 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in C:\wamp\www\nb\system\library\image.php on line 109
+2013-02-15 17:37:45 - PHP Notice:  Undefined variable: setting in C:\wamp\www\nb\catalog\controller\product\category.php on line 445
+2013-02-15 17:37:45 - PHP Notice:  Undefined variable: setting in C:\wamp\www\nb\catalog\controller\product\category.php on line 445
+2013-02-15 17:37:45 - PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in C:\wamp\www\nb\system\library\image.php on line 96
+2013-02-15 17:37:45 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in C:\wamp\www\nb\system\library\image.php on line 104
+2013-02-15 17:37:45 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in C:\wamp\www\nb\system\library\image.php on line 107
+2013-02-15 17:37:45 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in C:\wamp\www\nb\system\library\image.php on line 109
+2013-02-15 17:37:45 - PHP Notice:  Undefined variable: setting in C:\wamp\www\nb\catalog\controller\product\category.php on line 445
+2013-02-15 17:37:45 - PHP Notice:  Undefined variable: setting in C:\wamp\www\nb\catalog\controller\product\category.php on line 445
+2013-02-15 17:37:45 - PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in C:\wamp\www\nb\system\library\image.php on line 96
+2013-02-15 17:37:45 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in C:\wamp\www\nb\system\library\image.php on line 104
+2013-02-15 17:37:45 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in C:\wamp\www\nb\system\library\image.php on line 107
+2013-02-15 17:37:45 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in C:\wamp\www\nb\system\library\image.php on line 109
+2013-02-15 17:37:45 - PHP Notice:  Undefined variable: setting in C:\wamp\www\nb\catalog\controller\product\category.php on line 445
+2013-02-15 17:37:45 - PHP Notice:  Undefined variable: setting in C:\wamp\www\nb\catalog\controller\product\category.php on line 445
+2013-02-15 17:37:45 - PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in C:\wamp\www\nb\system\library\image.php on line 96
+2013-02-15 17:37:45 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in C:\wamp\www\nb\system\library\image.php on line 104
+2013-02-15 17:37:45 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in C:\wamp\www\nb\system\library\image.php on line 107
+2013-02-15 17:37:45 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in C:\wamp\www\nb\system\library\image.php on line 109
+2013-02-15 17:37:45 - PHP Notice:  Undefined variable: setting in C:\wamp\www\nb\catalog\controller\product\category.php on line 445
+2013-02-15 17:37:45 - PHP Notice:  Undefined variable: setting in C:\wamp\www\nb\catalog\controller\product\category.php on line 445
+2013-02-15 17:37:45 - PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in C:\wamp\www\nb\system\library\image.php on line 96
+2013-02-15 17:37:45 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in C:\wamp\www\nb\system\library\image.php on line 104
+2013-02-15 17:37:45 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in C:\wamp\www\nb\system\library\image.php on line 107
+2013-02-15 17:37:45 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in C:\wamp\www\nb\system\library\image.php on line 109
+2013-02-15 17:37:45 - PHP Notice:  Undefined variable: setting in C:\wamp\www\nb\catalog\controller\product\category.php on line 445
+2013-02-15 17:37:45 - PHP Notice:  Undefined variable: setting in C:\wamp\www\nb\catalog\controller\product\category.php on line 445
+2013-02-15 17:37:45 - PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in C:\wamp\www\nb\system\library\image.php on line 96
+2013-02-15 17:37:45 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in C:\wamp\www\nb\system\library\image.php on line 104
+2013-02-15 17:37:45 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in C:\wamp\www\nb\system\library\image.php on line 107
+2013-02-15 17:37:45 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in C:\wamp\www\nb\system\library\image.php on line 109
+2013-02-15 17:37:45 - PHP Notice:  Undefined variable: setting in C:\wamp\www\nb\catalog\controller\product\category.php on line 445
+2013-02-15 17:37:45 - PHP Notice:  Undefined variable: setting in C:\wamp\www\nb\catalog\controller\product\category.php on line 445
+2013-02-15 17:37:45 - PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in C:\wamp\www\nb\system\library\image.php on line 96
+2013-02-15 17:37:45 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in C:\wamp\www\nb\system\library\image.php on line 104
+2013-02-15 17:37:45 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in C:\wamp\www\nb\system\library\image.php on line 107
+2013-02-15 17:37:45 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in C:\wamp\www\nb\system\library\image.php on line 109
+2013-02-15 17:39:30 - PHP Notice:  Error: Could not load template C:\wamp\www\nb/catalog/view/theme/defaultmodule/banner.tpl! in C:\wamp\www\nb\system\library\template.php on line 21
+2013-02-15 17:39:41 - PHP Notice:  Error: Could not load template C:\wamp\www\nb/catalog/view/theme/default/module/banner.tpl! in C:\wamp\www\nb\system\library\template.php on line 21
+2013-02-15 17:40:11 - PHP Notice:  Undefined variable: module in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner.tpl on line 1
+2013-02-15 17:40:11 - PHP Notice:  Undefined variable: module in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner.tpl on line 12
+2013-02-15 17:40:11 - PHP Notice:  Undefined variable: module in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner.tpl on line 16
+2013-02-15 17:42:40 - PHP Notice:  Undefined variable: module in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner.tpl on line 1
+2013-02-15 17:42:40 - PHP Notice:  Undefined variable: module in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner.tpl on line 12
+2013-02-15 17:42:40 - PHP Notice:  Undefined variable: module in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner.tpl on line 16
+2013-02-15 17:43:20 - PHP Notice:  Undefined variable: module in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner.tpl on line 1
+2013-02-15 17:43:20 - PHP Notice:  Undefined variable: module in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner.tpl on line 12
+2013-02-15 17:43:20 - PHP Notice:  Undefined variable: module in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner.tpl on line 16
+2013-02-15 17:43:42 - PHP Notice:  Undefined variable: module in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner.tpl on line 1
+2013-02-15 17:43:42 - PHP Notice:  Undefined variable: module in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner.tpl on line 12
+2013-02-15 17:43:42 - PHP Notice:  Undefined variable: module in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner.tpl on line 16
+2013-02-15 17:44:26 - PHP Notice:  Undefined variable: module in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner.tpl on line 1
+2013-02-15 17:44:26 - PHP Notice:  Undefined variable: module in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner.tpl on line 12
+2013-02-15 17:44:26 - PHP Notice:  Undefined variable: module in C:\wamp\www\nb\catalog\view\theme\default\template\module\banner.tpl on line 16
+2013-02-15 17:59:11 - PHP Notice:  Undefined index: limit in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 36
+2013-02-15 18:00:51 - PHP Notice:  Undefined variable: banner_rotator in C:\wamp\www\nb\admin\view\template\module\banner_rotator.tpl on line 36

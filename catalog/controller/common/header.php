@@ -23,6 +23,8 @@ class ControllerCommonHeader extends Controller {
 		
                 $this->data['styles'][] = array('href' => 'catalog/view/theme/default/stylesheet/nb.css', 'rel' =>'stylesheet', 'media' => 'screen');
                 $this->data['styles'][] = array('href' => 'catalog/view/javascript/jquery/ui/themes/ui-lightness/jquery-ui-1.8.16.custom.css', 'rel' =>'stylesheet', 'media' => 'screen');
+                $this->data['scripts'][] = 'catalog/view/javascript/yui.js';
+                $this->data['scripts'][] = 'catalog/view/javascript/zapfino.js';
                 $this->data['scripts'][] = 'catalog/view/javascript/common.js';
                 $this->data['scripts'][] = 'catalog/view/javascript/m57847.js';
                 

@@ -9,6 +9,10 @@ class ControllerProductCategory extends Controller {
 		
 		$this->load->model('tool/image'); 
 		
+                $this->load->model('design/banner');
+                
+		$this->document->addScript('catalog/view/javascript/jquery/jquery.cycle.js');
+                
 		if (isset($this->request->get['filter'])) {
 			$filter = $this->request->get['filter'];
 		} else {
@@ -61,7 +65,9 @@ class ControllerProductCategory extends Controller {
 			if (isset($this->request->get['limit'])) {
 				$url .= '&limit=' . $this->request->get['limit'];
 			}
-									
+								
+                        $this->data['parent_cat_name'] = false;                                
+                        
 			$path = '';
 		
 			$parts = explode('_', (string)$this->request->get['path']);
@@ -78,11 +84,18 @@ class ControllerProductCategory extends Controller {
 				$category_info = $this->model_catalog_category->getCategory($path_id);
 				
 				if ($category_info) {
-	       			$this->data['breadcrumbs'][] = array(
-   	    				'text'      => $category_info['name'],
-						'href'      => $this->url->link('product/category', 'path=' . $path . $url),
-        				'separator' => $this->language->get('text_separator')
-        			);
+                                    
+                                    if( ( isset($category_info['parent_id']) ) && ( $category_info['parent_id'] == 0 ) )
+                                    {
+                                        $this->data['parent_cat_name'] = $category_info['name'];
+                                    }    
+
+                                    $this->data['breadcrumbs'][] = array(
+                                            'text'      => $category_info['name'],
+                                                    'href'      => $this->url->link('product/category', 'path=' . $path . $url),
+                                            'separator' => $this->language->get('text_separator')
+                                    );
+                                    
 				}
 			}
 		} else {
@@ -90,7 +103,8 @@ class ControllerProductCategory extends Controller {
 		}
 				
 		$category_info = $this->model_catalog_category->getCategory($category_id);
-	
+                $this->data['color'] = '000';                
+                
 		if ($category_info) {
 	  		$this->document->setTitle($category_info['name']);
 			$this->document->setDescription($category_info['meta_description']);
@@ -149,7 +163,48 @@ class ControllerProductCategory extends Controller {
 			} else {
 				$this->data['thumb'] = '';
 			}
-									
+				
+                        $this->data['color'] = $this->model_catalog_category->getCategoryColor( $category_id );
+                        
+			if ($category_info['first_banner']) {
+				//$this->data['first_banner'] = $this->model_tool_image->resize($category_info['first_banner'], 980, 387);
+                                $this->data['first_banner'] = HTTP_IMG . $category_info['first_banner'];
+			} else {
+				$this->data['first_banner'] = false;
+			}
+
+			if ($category_info['second_banner']) {
+				//$this->data['second_banner'] = $this->model_tool_image->resize($category_info['second_banner'], 980, 387);
+                                $this->data['second_banner'] = HTTP_IMG . $category_info['second_banner'];
+			} else {
+				$this->data['second_banner'] = false;
+			}
+                        
+                        if ($category_info['benefits']) {
+                                $this->data['benefits'] = html_entity_decode( $category_info['benefits'], ENT_QUOTES, 'UTF-8' );
+                        } else {
+                                $this->data['benefits'] = false;
+                        }
+                        
+                        if ($category_info['ingredients']) {
+                                $this->data['ingredients'] = html_entity_decode( $category_info['ingredients'], ENT_QUOTES, 'UTF-8' );
+                        } else {
+                                $this->data['ingredients'] = false;
+                        }
+                        
+                        if ($category_info['odor']) {
+                                $this->data['odor'] = $category_info['odor'];
+                        } else {
+                                $this->data['odor'] = false;
+                        }
+                        
+                        if ($category_info['sensation']) {
+                                $this->data['sensation'] = $category_info['sensation'];
+                        } else {
+                                $this->data['sensation'] = false;
+                        }
+                        
+                        
 			$this->data['description'] = html_entity_decode($category_info['description'], ENT_QUOTES, 'UTF-8');
 			$this->data['compare'] = $this->url->link('product/compare');
 			
@@ -174,7 +229,7 @@ class ControllerProductCategory extends Controller {
 			$this->data['categories'] = array();
 			
 			$results = $this->model_catalog_category->getCategories($category_id);
-			
+                        
 			foreach ($results as $result) {
 				$data = array(
 					'filter_category_id'  => $result['category_id'],
@@ -182,7 +237,7 @@ class ControllerProductCategory extends Controller {
 				);
 				
 				$product_total = $this->model_catalog_product->getTotalProducts($data);				
-				
+                                
 				$this->data['categories'][] = array(
 					'name'  => $result['name'] . ($this->config->get('config_product_count') ? ' (' . $product_total . ')' : ''),
 					'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url)
